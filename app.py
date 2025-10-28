@@ -31,19 +31,31 @@ def google_verification():
 # Path to question banks
 QUESTION_BANKS_DIR = 'question_generator/data/question_banks'
 
-# Available topics
+# Available topics organized by subject
 TOPICS = {
-    'limits': 'Limits',
-    'differentiation': 'Differentiation',
-    'integration': 'Integration',
-    'trigonometry': 'Trigonometry',
-    'algebra': 'Algebra',
-    'vectors': 'Vectors',
-    'coordinate_geometry': 'Coordinate Geometry',
-    'matrices': 'Matrices',
-    'probability': 'Probability',
-    'logarithm': 'Logarithm',
-    'statistics': 'Statistics'
+    'mathematics': {
+        'limits': 'Limits',
+        'differentiation': 'Differentiation',
+        'integration': 'Integration',
+        'trigonometry': 'Trigonometry',
+        'algebra': 'Algebra',
+        'vectors': 'Vectors',
+        'coordinate_geometry': 'Coordinate Geometry',
+        'matrices': 'Matrices',
+        'probability': 'Probability',
+        'logarithm': 'Logarithm',
+        'statistics': 'Statistics'
+    },
+    'physics': {
+        'kinematics': 'Kinematics',
+        'newton_laws': "Newton's Laws",
+        'circular_motion': 'Circular Motion',
+        'work_energy': 'Work & Energy',
+        'ohms_law': "Ohm's Law",
+        'capacitance': 'Capacitance',
+        'heat_transfer': 'Heat Transfer',
+        'wave_motion': 'Wave Motion'
+    }
 }
 
 
@@ -79,6 +91,13 @@ def index():
     return render_template('index.html', 
                           total_questions=total_questions,
                           topics=TOPICS)
+
+@app.route('/api/topics/<subject>')
+def get_topics(subject):
+    """Get topics for a specific subject"""
+    if subject in TOPICS:
+        return jsonify({'success': True, 'topics': TOPICS[subject]})
+    return jsonify({'success': False, 'error': 'Invalid subject'}), 400
 
 
 @app.route('/api/generate', methods=['POST'])

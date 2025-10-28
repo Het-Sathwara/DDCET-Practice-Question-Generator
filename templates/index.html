@@ -57,12 +57,16 @@
         </header>
 
         <form id="question-form">
+            <label for="subject">Select Subject:</label>
+            <select id="subject" name="subject" required>
+                <option value="">-- Choose subject --</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="physics">Physics</option>
+            </select>
+
             <label for="topic">Select Topic:</label>
-            <select id="topic" name="topic" required>
-                <option value="">-- Choose a topic --</option>
-                {% for key, name in topics.items() %}
-                <option value="{{ key }}">{{ name }}</option>
-                {% endfor %}
+            <select id="topic" name="topic" required disabled>
+                <option value="">-- Select subject first --</option>
             </select>
 
             <label for="count">Number of Questions (1-100):</label>

@@ -2,6 +2,38 @@
 
 let sessionQuestions = [];
 
+// Subject change handler
+document.getElementById('subject').addEventListener('change', async (e) => {
+    const subject = e.target.value;
+    const topicSelect = document.getElementById('topic');
+    
+    if (!subject) {
+        topicSelect.disabled = true;
+        topicSelect.innerHTML = '<option value="">-- Select subject first --</option>';
+        return;
+    }
+    
+    try {
+        const response = await fetch(`/api/topics/${subject}`);
+        const data = await response.json();
+        
+        if (data.success) {
+            topicSelect.disabled = false;
+            topicSelect.innerHTML = '<option value="">-- Choose a topic --</option>';
+            
+            Object.entries(data.topics).forEach(([key, name]) => {
+                const option = document.createElement('option');
+                option.value = key;
+                option.textContent = name;
+                topicSelect.appendChild(option);
+            });
+        }
+    } catch (error) {
+        console.error('Error loading topics:', error);
+        alert('Failed to load topics');
+    }
+});
+
 // Form submission
 document.getElementById('question-form').addEventListener('submit', async (e) => {
     e.preventDefault();
