@@ -27,7 +27,9 @@ TOPICS = {
     'vectors': 'Vectors',
     'coordinate_geometry': 'Coordinate Geometry',
     'matrices': 'Matrices',
-    'probability': 'Probability'
+    'probability': 'Probability',
+    'logarithm': 'Logarithm',
+    'statistics': 'Statistics'
 }
 
 
