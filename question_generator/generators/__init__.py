@@ -15,10 +15,14 @@ from .physics_generators import (
     WaveMotionGenerator
 )
 
-# Only remaining legacy math generators
+# Math generators - NEW: Bank-based system for better variety
+from .math_bank_generator import (
+    MatricesBankGenerator,
+    LogarithmBankGenerator
+)
+
+# Legacy generators
 from .math_generators import (
-    MatricesGenerator,
-    LogarithmGenerator,
     StatisticsGenerator
 )
 
@@ -32,11 +36,10 @@ __all__ = [
     'CapacitanceGenerator',
     'HeatTransferGenerator',
     'WaveMotionGenerator',
-    # Mathematics - Remaining legacy generators (3 generators)
-    # Note: Trigonometry, Vectors, Coordinate Geometry, Limits, Differentiation, Integration
-    #       have comprehensive implementations in question_generator.maths module
-    'MatricesGenerator',
-    'LogarithmGenerator',
+    # Mathematics - Bank-based generators (better variety!)
+    'MatricesBankGenerator',
+    'LogarithmBankGenerator',
+    # Legacy
     'StatisticsGenerator'
 ]
 

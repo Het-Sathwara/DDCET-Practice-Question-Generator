@@ -16,9 +16,13 @@ from ..generators.physics_generators import (
     WorkEnergyGenerator, OhmsLawGenerator, CapacitanceGenerator,
     HeatTransferGenerator, WaveMotionGenerator
 )
-# Old math generators (remaining ones without individual files)
+# Math generators - Bank-based for better variety
+from ..generators.math_bank_generator import (
+    MatricesBankGenerator, LogarithmBankGenerator
+)
+# Legacy
 from ..generators.math_generators import (
-    MatricesGenerator, LogarithmGenerator, StatisticsGenerator
+    StatisticsGenerator
 )
 # New comprehensive individual generators
 from ..maths import (
@@ -209,8 +213,8 @@ class QuestionGeneratorCLI:
             "Integration (20+ formulas)": IntegrationGeneratorWrapper,
             "Vectors": VectorsGeneratorWrapper,
             "Coordinate Geometry": CoordinateGeometryGeneratorWrapper,
-            "Matrices & Determinants": MatricesGenerator,
-            "Logarithm": LogarithmGenerator,
+            "Matrices & Determinants": MatricesBankGenerator,
+            "Logarithm": LogarithmBankGenerator,
             "Statistics": StatisticsGenerator
         }
     

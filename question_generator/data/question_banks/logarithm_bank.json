@@ -1,0 +1,31 @@
+{
+  "easy": [
+    {"question": "Evaluate: log₁₀(100)", "answer": "2", "solution": "log₁₀(100) = log₁₀(10²) = 2"},
+    {"question": "Evaluate: log₁₀(1000)", "answer": "3", "solution": "log₁₀(1000) = log₁₀(10³) = 3"},
+    {"question": "Evaluate: log₂(8)", "answer": "3", "solution": "log₂(8) = log₂(2³) = 3"},
+    {"question": "Evaluate: log₃(27)", "answer": "3", "solution": "log₃(27) = log₃(3³) = 3"},
+    {"question": "Evaluate: log₅(25)", "answer": "2", "solution": "log₅(25) = log₅(5²) = 2"},
+    {"question": "Simplify: log(2) + log(5)", "answer": "log(10) = 1", "solution": "log(2×5) = log(10) = 1"},
+    {"question": "Simplify: log(100) - log(10)", "answer": "1", "solution": "log(100/10) = log(10) = 1"},
+    {"question": "Simplify: log(5²)", "answer": "2log(5)", "solution": "log(a^n) = n·log(a)"},
+    {"question": "Evaluate: ln(e)", "answer": "1", "solution": "ln(e) = log_e(e) = 1"},
+    {"question": "Evaluate: ln(1)", "answer": "0", "solution": "ln(1) = 0 for any base"}
+  ],
+  "medium": [
+    {"question": "Solve: log₂(x) = 4", "answer": "16", "solution": "x = 2⁴ = 16"},
+    {"question": "Solve: log₃(x) = 3", "answer": "27", "solution": "x = 3³ = 27"},
+    {"question": "Expand: log(6xy)", "answer": "log(6) + log(x) + log(y)", "solution": "log(abc) = log(a) + log(b) + log(c)"},
+    {"question": "Condense: log(2) + log(3) + log(5)", "answer": "log(30)", "solution": "log(2×3×5) = log(30)"},
+    {"question": "Solve: log(x) + log(x-3) = log(10)", "answer": "5", "solution": "x(x-3) = 10, x² - 3x - 10 = 0, x = 5"},
+    {"question": "Convert log₂(16) to base 10", "answer": "log(16)/log(2) = 4", "solution": "log_a(b) = log(b)/log(a)"},
+    {"question": "Simplify: 2log(3) - log(9)", "answer": "0", "solution": "log(3²) - log(9) = log(9) - log(9) = 0"}
+  ],
+  "hard": [
+    {"question": "Solve: log(x) + log(x+21) = 2", "answer": "4", "solution": "log(x(x+21)) = 2\nx² + 21x = 100\nx² + 21x - 100 = 0\n(x+25)(x-4) = 0\nx = 4 (x > 0)"},
+    {"question": "Solve: log₂(x) + log₂(x-7) = 3", "answer": "8", "solution": "log₂(x(x-7)) = 3\nx(x-7) = 8\nx² - 7x - 8 = 0\n(x-8)(x+1) = 0\nx = 8"},
+    {"question": "If log₂(x) = 3 + log₂(y), find x in terms of y", "answer": "x = 8y", "solution": "log₂(x) - log₂(y) = 3\nlog₂(x/y) = 3\nx/y = 2³ = 8\nx = 8y"},
+    {"question": "Solve: 2^(x+1) = 32", "answer": "4", "solution": "2^(x+1) = 2⁵\nx + 1 = 5\nx = 4"},
+    {"question": "A bacteria population doubles every 3 hours. If initial population is 100, find population after 12 hours.", "answer": "1600", "solution": "Time periods = 12/3 = 4\nP = 100 × 2⁴ = 100 × 16 = 1600"}
+  ]
+}
+
