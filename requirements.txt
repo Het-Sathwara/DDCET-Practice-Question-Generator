@@ -9,6 +9,11 @@ questionary>=2.0.1
 # Export and Data Handling
 python-dateutil>=2.8.2
 
+# Web Application
+Flask>=2.3.0
+Flask-CORS>=4.0.0
+gunicorn>=21.2.0
+
 # Optional PDF support (uncomment if needed)
 # reportlab>=4.0.0
 # pypdf2>=3.0.0

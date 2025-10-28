@@ -1,7 +1,7 @@
 # Question Generator
 
 A comprehensive, intelligent question generation system for Physics and Mathematics based on the **DDCET (Diploma to Degree Common Entrance Test)** syllabus
-## Status: Prototype | 130+ Formulas | 20 Generators
+## Status: PRODUCTION READY | 130+ Formulas | 20 Generators | WEB + CLI
 
 ### Latest Update: Comprehensive Individual Math Generators
 - Limits: 14+ formulas (ALL from formula image)
@@ -129,9 +129,10 @@ Generate custom sets by:
 
 ### Setup
 
-1. **Clone or download the repository**
+1. **Clone the repository**
 ```bash
-cd /home/toji/Python
+git clone https://github.com/Het-Sathwara/DDCET-Practice-Question-Generator.git
+cd DDCET-Practice-Question-Generator
 ```
 
 2. **Install dependencies**
@@ -139,16 +140,39 @@ cd /home/toji/Python
 pip install -r requirements.txt
 ```
 
-Or install packages individually:
+## Usage
+
+### Option 1: Web Application (Recommended - Mobile Friendly!)
+
+**Run locally:**
 ```bash
-pip install sympy numpy colorama questionary python-dateutil
+python app.py
 ```
 
-## 📖 Usage
+Then open in browser:
+```
+http://localhost:5000
+```
 
-### Quick Start
+**Deploy online (FREE):**
 
-Run the main application:
+See [WEB_DEPLOYMENT_GUIDE.md](WEB_DEPLOYMENT_GUIDE.md) for complete deployment instructions.
+
+Quick Deploy to Render (Free):
+1. Push to GitHub
+2. Sign up at https://render.com
+3. Create new Web Service from your GitHub repo
+4. Set build command: `pip install -r requirements.txt`
+5. Set start command: `gunicorn app:app`
+6. Deploy!
+
+Your app will be live at: `https://your-app-name.onrender.com`
+
+Access from mobile, tablet, or desktop - works everywhere!
+
+### Option 2: CLI Application (Terminal)
+
+Run the command-line interface:
 ```bash
 python main.py
 ```
