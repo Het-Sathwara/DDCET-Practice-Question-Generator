@@ -19,18 +19,11 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
-
-# Flask
-instance/
-.webassets-cache
-.flask_session
 
 # Virtual Environment
 venv/
 ENV/
 env/
-.venv
 
 # IDE
 .vscode/
@@ -39,23 +32,24 @@ env/
 *.swo
 *~
 
+# Flask
+instance/
+.webassets-cache
+.flask_session
+
+# Generated Questions
+generated_questions/
+
 # OS
 .DS_Store
 Thumbs.db
 
-# Generated Questions (optional - remove this line if you want to commit generated questions)
-generated_questions/
+# Logs
+*.log
 
-# Test files
-test_*.py
-*_test.py
+# Reference PDFs (already processed)
+*.pdf
 
 # Temporary files
 *.tmp
-*.log
-
-# PDFs and images (formula sources)
-formula.pdf
-*.png
-*.jpg
-*.jpeg
+*.temp
