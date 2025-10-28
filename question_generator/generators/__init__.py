@@ -1,7 +1,7 @@
-"""Question generators for Physics and Mathematics
+"""Question generators for Physics
 
-NOTE: Most math generators have moved to question_generator.maths module
-      This module now only contains Physics generators and remaining math generators.
+NOTE: Mathematics uses JSON question banks (31,000 questions)
+      Physics uses dynamic Python generators (unlimited questions)
 """
 
 from .physics_generators import (
@@ -15,19 +15,8 @@ from .physics_generators import (
     WaveMotionGenerator
 )
 
-# Math generators - NEW: Bank-based system for better variety
-from .math_bank_generator import (
-    MatricesBankGenerator,
-    LogarithmBankGenerator
-)
-
-# Legacy generators
-from .math_generators import (
-    StatisticsGenerator
-)
-
 __all__ = [
-    # Physics (8 generators)
+    # Physics (8 generators) - Dynamic generation
     'KinematicsGenerator',
     'NewtonLawsGenerator',
     'CircularMotionGenerator',
@@ -35,11 +24,6 @@ __all__ = [
     'OhmsLawGenerator',
     'CapacitanceGenerator',
     'HeatTransferGenerator',
-    'WaveMotionGenerator',
-    # Mathematics - Bank-based generators (better variety!)
-    'MatricesBankGenerator',
-    'LogarithmBankGenerator',
-    # Legacy
-    'StatisticsGenerator'
+    'WaveMotionGenerator'
 ]
 
