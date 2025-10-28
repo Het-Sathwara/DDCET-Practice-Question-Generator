@@ -1,4 +1,4 @@
-/* Minimal Nerd Style CSS - Lightweight & Functional */
+/* Minimal Professional Style - Black/Grey/White/Beige */
 
 * {
     margin: 0;
@@ -7,9 +7,9 @@
 }
 
 body {
-    font-family: 'Courier New', monospace;
-    background: #0a0a0a;
-    color: #0f0;
+    font-family: 'Courier New', 'Consolas', monospace;
+    background: #000000;
+    color: #e8e8e8;
     padding: 10px;
     line-height: 1.6;
 }
@@ -21,18 +21,19 @@ body {
 
 /* Header */
 header {
-    border: 1px solid #0f0;
+    border: 1px solid #555;
     padding: 15px;
     margin-bottom: 20px;
+    background: #0a0a0a;
 }
 
 header h1 {
     font-size: 1.5rem;
-    color: #0f0;
+    color: #f5f5dc;
 }
 
 header .subtitle {
-    color: #888;
+    color: #999;
     font-size: 0.9rem;
 }
 
@@ -43,21 +44,22 @@ header .subtitle {
 }
 
 .stats span {
-    color: #0f0;
+    color: #f5f5dc;
     font-weight: bold;
 }
 
 /* Forms */
 form {
-    border: 1px solid #0f0;
+    border: 1px solid #555;
     padding: 15px;
     margin-bottom: 20px;
+    background: #0a0a0a;
 }
 
 label {
     display: block;
     margin-top: 10px;
-    color: #888;
+    color: #999;
     font-size: 0.85rem;
 }
 
@@ -65,15 +67,15 @@ input, select {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
-    background: #111;
-    border: 1px solid #333;
-    color: #0f0;
+    background: #1a1a1a;
+    border: 1px solid #444;
+    color: #e8e8e8;
     font-family: 'Courier New', monospace;
 }
 
 input:focus, select:focus {
     outline: none;
-    border-color: #0f0;
+    border-color: #f5f5dc;
 }
 
 input:disabled, select:disabled {
@@ -84,59 +86,62 @@ input:disabled, select:disabled {
 button {
     padding: 10px 20px;
     margin: 10px 5px 0 0;
-    background: #111;
-    border: 1px solid #0f0;
-    color: #0f0;
+    background: #1a1a1a;
+    border: 1px solid #666;
+    color: #e8e8e8;
     font-family: 'Courier New', monospace;
     cursor: pointer;
 }
 
 button:hover {
-    background: #0f0;
+    background: #f5f5dc;
     color: #000;
+    border-color: #f5f5dc;
 }
 
 button.danger {
-    border-color: #f00;
-    color: #f00;
+    border-color: #666;
+    color: #999;
 }
 
 button.danger:hover {
-    background: #f00;
-    color: #000;
+    background: #666;
+    color: #fff;
 }
 
 /* Loading */
 #loading {
-    border: 1px solid #0f0;
+    border: 1px solid #555;
     padding: 20px;
     text-align: center;
     margin: 20px 0;
-    color: #0f0;
+    color: #f5f5dc;
+    background: #0a0a0a;
 }
 
 /* Results */
 #results, #statistics {
-    border: 1px solid #0f0;
+    border: 1px solid #555;
     padding: 15px;
     margin: 20px 0;
+    background: #0a0a0a;
 }
 
 h2 {
-    color: #0f0;
+    color: #f5f5dc;
     font-size: 1.2rem;
     margin-bottom: 15px;
 }
 
 .question-item {
-    border-left: 2px solid #0f0;
-    padding: 10px;
+    border-left: 3px solid #666;
+    padding: 15px;
     margin: 15px 0;
-    background: #111;
+    background: #1a1a1a;
 }
 
 .question-item h3 {
-    color: #0f0;
+    color: #f5f5dc;
     font-size: 0.95rem;
     margin-bottom: 8px;
 }
@@ -151,14 +156,19 @@ h2 {
     display: inline-block;
     margin-right: 10px;
     padding: 2px 8px;
-    background: #222;
-    border: 1px solid #333;
+    background: #2a2a2a;
+    border: 1px solid #444;
+    color: #ccc;
 }
 
 .question-text {
     margin: 10px 0;
     white-space: pre-wrap;
     font-family: 'Courier New', monospace;
+    background: #0a0a0a;
+    padding: 10px;
+    border: 1px solid #333;
+    color: #e8e8e8;
 }
 
 .question-options {
@@ -172,18 +182,23 @@ h2 {
 }
 
 .answer-box {
-    background: #001100;
-    border: 1px solid #0f0;
+    background: #0f0f0f;
+    border: 1px solid #666;
     padding: 10px;
     margin: 10px 0;
+    color: #f5f5dc;
+    white-space: pre-wrap;
+    font-family: 'Courier New', monospace;
 }
 
 .solution-box {
-    background: #111100;
-    border: 1px solid #ff0;
+    background: #1a1a1a;
+    border: 1px solid #555;
     padding: 10px;
     margin: 10px 0;
-    color: #ff0;
+    color: #ccc;
+    white-space: pre-wrap;
+    font-family: 'Courier New', monospace;
 }
 
 /* Statistics */
@@ -195,14 +210,15 @@ h2 {
 }
 
 .stat-card {
-    border: 1px solid #0f0;
+    border: 1px solid #555;
     padding: 15px;
     text-align: center;
+    background: #1a1a1a;
 }
 
 .stat-card h3 {
     font-size: 1.8rem;
-    color: #0f0;
+    color: #f5f5dc;
 }
 
 .stat-card p {
@@ -212,15 +228,16 @@ h2 {
 
 .stat-breakdown {
     margin: 15px 0;
-    border: 1px solid #333;
+    border: 1px solid #444;
     padding: 10px;
+    background: #1a1a1a;
 }
 
 .stat-item {
     display: flex;
     justify-content: space-between;
     padding: 8px 0;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #333;
 }
 
 .stat-item:last-child {
@@ -229,14 +246,15 @@ h2 {
 
 /* Actions */
 #actions {
-    border: 1px solid #0f0;
+    border: 1px solid #555;
     padding: 15px;
     margin: 20px 0;
+    background: #0a0a0a;
 }
 
 /* Footer */
 footer {
-    border-top: 1px solid #333;
+    border-top: 1px solid #444;
     padding: 15px 0;
     text-align: center;
     margin-top: 30px;
@@ -245,7 +263,7 @@ footer {
 }
 
 footer a {
-    color: #0f0;
+    color: #f5f5dc;
     text-decoration: none;
 }
 
@@ -255,24 +273,25 @@ footer a:hover {
 
 /* Alerts */
 .alert {
-    border: 1px solid #0f0;
+    border: 1px solid #666;
     padding: 10px;
     margin: 15px 0;
+    background: #1a1a1a;
 }
 
 .alert-success {
-    border-color: #0f0;
-    color: #0f0;
+    border-color: #666;
+    color: #f5f5dc;
 }
 
 .alert-error {
-    border-color: #f00;
-    color: #f00;
+    border-color: #666;
+    color: #ccc;
 }
 
 .alert-info {
-    border-color: #00f;
-    color: #00f;
+    border-color: #666;
+    color: #ccc;
 }
 
 /* Mobile */
