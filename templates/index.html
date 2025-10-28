@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DDCET Question Generator - 27,000 Questions</title>
+    <title>DDCET Question Generator</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
@@ -14,7 +14,7 @@
         </header>
 
         <form id="question-form">
-            <label for="topic">Select Chapter/Topic:</label>
+            <label for="topic">Select Topic:</label>
             <select id="topic" name="topic" required>
                 <option value="">-- Choose a topic --</option>
                 {% for key, name in topics.items() %}
@@ -34,7 +34,7 @@
         </div>
 
         <div id="results" style="display: none;">
-            <h2>Generated Questions</h2>
+            <h2>Questions</h2>
             <div style="margin-bottom: 15px;">
                 <button onclick="exportQuestions('json')">Export JSON</button>
                 <button onclick="exportQuestions('text')">Export TXT</button>

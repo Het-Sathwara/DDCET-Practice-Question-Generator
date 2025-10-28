@@ -29,9 +29,9 @@ document.getElementById('question-form').addEventListener('submit', async (e) =>
         const data = await response.json();
         
         if (data.success) {
-            // CLEAR PREVIOUS QUESTIONS (replace, don't append)
+            // CLEAR previous questions (replace, don't append)
             sessionQuestions = data.questions;
-            displayQuestions(data.questions, true); // true = clear previous
+            displayQuestions(data.questions);
         } else {
             alert(data.error || 'Failed to generate questions');
         }
@@ -44,7 +44,7 @@ document.getElementById('question-form').addEventListener('submit', async (e) =>
 });
 
 // Display questions
-function displayQuestions(questions, clearPrevious = false) {
+function displayQuestions(questions) {
     const resultsDiv = document.getElementById('results');
     const questionsDiv = document.getElementById('questions-list');
     
@@ -74,17 +74,9 @@ function displayQuestions(questions, clearPrevious = false) {
         `;
     });
     
-    // Clear previous or append
-    if (clearPrevious) {
-        questionsDiv.innerHTML = html;
-    } else {
-        questionsDiv.innerHTML += html;
-    }
-    
+    // REPLACE content (not append)
+    questionsDiv.innerHTML = html;
     resultsDiv.style.display = 'block';
-    
-    // Scroll to top
-    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // Clear questions
@@ -103,7 +95,7 @@ function showLoading(show) {
     const loading = document.getElementById('loading');
     if (show) {
         loading.style.display = 'block';
-        loading.textContent = 'Fetching questions from database...';
+        loading.textContent = 'Loading questions...';
     } else {
         loading.style.display = 'none';
     }
