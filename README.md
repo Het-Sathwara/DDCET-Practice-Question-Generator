@@ -525,17 +525,6 @@ pip install --upgrade -r requirements.txt
 chmod +x main.py
 ```
 
-## 🌟 Future Enhancements
-
-- [ ] PDF export with LaTeX formatting
-- [ ] Image-based questions (graphs, diagrams)
-- [ ] Multi-language support
-- [ ] Web interface
-- [ ] Database integration
-- [ ] Question difficulty AI prediction
-- [ ] Adaptive learning paths
-- [ ] Performance analytics
-
 ## 📧 Support
 
 For issues, questions, or suggestions:
