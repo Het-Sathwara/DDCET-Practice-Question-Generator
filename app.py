@@ -23,6 +23,11 @@ def robots():
 def sitemap():
     return send_from_directory('static', 'sitemap.xml')
 
+# Google Search Console Verification
+@app.route('/googlef6777d96df3cbc34.html')
+def google_verification():
+    return send_from_directory('static', 'googlef6777d96df3cbc34.html')
+
 # Path to question banks
 QUESTION_BANKS_DIR = 'question_generator/data/question_banks'
 
