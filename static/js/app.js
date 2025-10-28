@@ -1,5 +1,7 @@
 // Question Generator - Frontend JavaScript
 
+let sessionQuestions = [];
+
 // Form submission
 document.getElementById('question-form').addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -27,8 +29,9 @@ document.getElementById('question-form').addEventListener('submit', async (e) =>
         const data = await response.json();
         
         if (data.success) {
-            // REPLACE old questions with new ones
-            displayQuestions(data.questions);
+            // CLEAR PREVIOUS QUESTIONS (replace, don't append)
+            sessionQuestions = data.questions;
+            displayQuestions(data.questions, true); // true = clear previous
         } else {
             alert(data.error || 'Failed to generate questions');
         }
@@ -41,7 +44,7 @@ document.getElementById('question-form').addEventListener('submit', async (e) =>
 });
 
 // Display questions
-function displayQuestions(questions) {
+function displayQuestions(questions, clearPrevious = false) {
     const resultsDiv = document.getElementById('results');
     const questionsDiv = document.getElementById('questions-list');
     
@@ -71,12 +74,28 @@ function displayQuestions(questions) {
         `;
     });
     
-    // REPLACE content instead of append
-    questionsDiv.innerHTML = html;
+    // Clear previous or append
+    if (clearPrevious) {
+        questionsDiv.innerHTML = html;
+    } else {
+        questionsDiv.innerHTML += html;
+    }
+    
     resultsDiv.style.display = 'block';
     
-    // Scroll to top to show new questions
+    // Scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Clear questions
+function clearQuestions() {
+    if (confirm('Clear all generated questions?')) {
+        sessionQuestions = [];
+        document.getElementById('questions-list').innerHTML = '';
+        document.getElementById('results').style.display = 'none';
+        
+        fetch('/api/clear', { method: 'POST' });
+    }
 }
 
 // Show/hide loading
@@ -84,8 +103,50 @@ function showLoading(show) {
     const loading = document.getElementById('loading');
     if (show) {
         loading.style.display = 'block';
-        loading.textContent = 'Loading questions...';
+        loading.textContent = 'Fetching questions from database...';
     } else {
         loading.style.display = 'none';
     }
+}
+
+// Export questions
+async function exportQuestions(format) {
+    if (sessionQuestions.length === 0) {
+        alert('No questions to export!');
+        return;
+    }
+    
+    try {
+        const response = await fetch(`/api/export/${format}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+        
+        if (format === 'json') {
+            const data = await response.json();
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            downloadFile(blob, `questions_${Date.now()}.json`);
+        } else if (format === 'text') {
+            const text = await response.text();
+            const blob = new Blob([text], { type: 'text/plain' });
+            downloadFile(blob, `questions_${Date.now()}.txt`);
+        }
+    } catch (error) {
+        console.error('Export error:', error);
+        alert('Failed to export questions');
+    }
+}
+
+// Download file helper
+function downloadFile(blob, filename) {
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
 }
