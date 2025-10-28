@@ -144,10 +144,9 @@ def generate_questions():
             generator = generator_class()
             
             # Generate questions using the generator
-            questions_obj = generator.generate_questions(
+            questions_obj = generator.generate(
                 difficulty='medium',
-                count=count,
-                question_type='all'
+                count=count
             )
             
             # Format response
