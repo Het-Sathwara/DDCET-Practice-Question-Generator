@@ -154,9 +154,9 @@ def generate_questions():
             for q in questions_obj:
                 questions_formatted.append({
                     'id': len(questions_formatted) + 1,
-                    'question': q.question,
-                    'answer': q.answer,
-                    'solution': q.solution if hasattr(q, 'solution') else f"Apply {q.chapter} principles to solve.",
+                    'question': q.question_text,
+                    'answer': str(q.answer),
+                    'solution': q.solution if hasattr(q, 'solution') and q.solution else f"Apply {q.chapter} principles to solve.",
                     'chapter': q.chapter,
                     'source': 'Physics Generator'
                 })
