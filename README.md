@@ -1,8 +1,7 @@
 # Question Generator
 
-A comprehensive, intelligent question generation system for Physics and Mathematics based on the **DDCET (Diploma to Degree Common Entrance Test)** syllabus, with difficulty levels inspired by JEE Main/Advanced standards.
-
-## Status: PRODUCTION READY | 130+ Formulas | 20 Generators
+A comprehensive, intelligent question generation system for Physics and Mathematics based on the **DDCET (Diploma to Degree Common Entrance Test)** syllabus
+## Status: Prototype | 130+ Formulas | 20 Generators
 
 ### Latest Update: Comprehensive Individual Math Generators
 - Limits: 14+ formulas (ALL from formula image)
