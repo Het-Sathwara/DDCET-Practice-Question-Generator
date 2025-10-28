@@ -5,6 +5,7 @@ menu-driven command-line interface for question generation
 
 import os
 import sys
+import time
 from typing import List, Dict, Any
 from colorama import init, Fore, Back, Style
 import questionary
@@ -192,6 +193,9 @@ class QuestionGeneratorCLI:
     def __init__(self):
         self.exporter = QuestionExporter()
         self.generated_questions = []
+        self.last_generation_time = 0
+        self.generation_cooldown = 2  # seconds
+        self.max_questions_per_generation = 100
         
         # Physics generators mapping
         self.physics_generators = {
@@ -293,14 +297,23 @@ class QuestionGeneratorCLI:
             style=custom_style
         ).ask()
         
-        # Select count
+        # Select count with limit
         count = questionary.text(
-            "How many questions to generate?",
+            f"How many questions to generate? (Max: {self.max_questions_per_generation})",
             default="10",
-            validate=lambda x: x.isdigit() and int(x) > 0
+            validate=lambda x: x.isdigit() and 0 < int(x) <= self.max_questions_per_generation
         ).ask()
         
         count = int(count)
+        
+        # Spam prevention
+        current_time = time.time()
+        time_since_last = current_time - self.last_generation_time
+        
+        if time_since_last < self.generation_cooldown and self.last_generation_time > 0:
+            wait_time = self.generation_cooldown - time_since_last
+            self.print_warning(f"Please wait {wait_time:.1f} seconds...")
+            time.sleep(wait_time)
         
         # Generate questions
         self.print_info(f"\nGenerating {count} {difficulty} questions on {topic}...\n")
@@ -311,6 +324,7 @@ class QuestionGeneratorCLI:
             questions = generator.generate(difficulty=difficulty, count=count)
             
             self.generated_questions.extend(questions)
+            self.last_generation_time = time.time()
             self.print_success(f"Successfully generated {len(questions)} questions!")
             
             # Preview option
@@ -340,21 +354,56 @@ class QuestionGeneratorCLI:
         if topic == "← Back":
             return
         
-        # Select difficulty
-        difficulty = questionary.select(
-            "Select difficulty level:",
-            choices=["easy", "medium", "hard", "extreme"],
-            style=custom_style
-        ).ask()
+        # Check if function-based generator (has formulas in name or is Vectors/Coordinate)
+        is_function_generator = ("formulas" in topic or 
+                                 topic in ["Vectors", "Coordinate Geometry"])
         
-        # Select count
+        # Dual-mode option for function generators
+        use_generation_mode = False
+        if is_function_generator:
+            mode = questionary.select(
+                "Select mode:",
+                choices=[
+                    "Question Bank (Better quality, all difficulties)",
+                    "Auto Generate (Easy questions only)",
+                    "← Back"
+                ],
+                style=custom_style
+            ).ask()
+            
+            if mode == "← Back":
+                return
+            
+            use_generation_mode = (mode == "Auto Generate (Easy questions only)")
+        
+        # Select difficulty
+        if use_generation_mode:
+            difficulty = "easy"
+            self.print_warning("Auto Generate mode creates easy-level questions only")
+        else:
+            difficulty = questionary.select(
+                "Select difficulty level:",
+                choices=["easy", "medium", "hard", "extreme"],
+                style=custom_style
+            ).ask()
+        
+        # Select count with limit
         count = questionary.text(
-            "How many questions to generate?",
+            f"How many questions to generate? (Max: {self.max_questions_per_generation})",
             default="10",
-            validate=lambda x: x.isdigit() and int(x) > 0
+            validate=lambda x: x.isdigit() and 0 < int(x) <= self.max_questions_per_generation
         ).ask()
         
         count = int(count)
+        
+        # Spam prevention
+        current_time = time.time()
+        time_since_last = current_time - self.last_generation_time
+        
+        if time_since_last < self.generation_cooldown and self.last_generation_time > 0:
+            wait_time = self.generation_cooldown - time_since_last
+            self.print_warning(f"Please wait {wait_time:.1f} seconds...")
+            time.sleep(wait_time)
         
         # Generate questions
         self.print_info(f"\nGenerating {count} {difficulty} questions on {topic}...\n")
@@ -365,6 +414,7 @@ class QuestionGeneratorCLI:
             questions = generator.generate(difficulty=difficulty, count=count)
             
             self.generated_questions.extend(questions)
+            self.last_generation_time = time.time()
             self.print_success(f"Successfully generated {len(questions)} questions!")
             
             # Preview option
