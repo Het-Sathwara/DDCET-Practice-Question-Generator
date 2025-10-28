@@ -9,16 +9,12 @@
 <body>
     <div class="container">
         <header>
-            <h1>📚 DDCET Question Generator</h1>
-            <p class="subtitle">27,000 Questions with Step-by-Step Solutions | JEE & GUJCET Patterns</p>
-            <div class="stats">
-                Total Available: <span>{{ total_questions }}</span> questions | 
-                Session Generated: <span id="session-count">0</span>
-            </div>
+            <h1>DDCET Question Generator</h1>
+            <p class="subtitle">Practice Questions with Step-by-Step Solutions</p>
         </header>
 
         <form id="question-form">
-            <label for="topic">📖 Select Chapter/Topic:</label>
+            <label for="topic">Select Chapter/Topic:</label>
             <select id="topic" name="topic" required>
                 <option value="">-- Choose a topic --</option>
                 {% for key, name in topics.items() %}
@@ -26,29 +22,19 @@
                 {% endfor %}
             </select>
 
-            <label for="count">🔢 Number of Questions (1-100):</label>
+            <label for="count">Number of Questions (1-100):</label>
             <input type="number" id="count" name="count" min="1" max="100" value="10">
 
-            <button type="submit">🎯 Generate Questions</button>
-            <button type="button" class="danger" onclick="clearQuestions()">🗑️ Clear All</button>
+            <button type="submit">Generate Questions</button>
         </form>
 
         <div id="loading" style="display: none;">
-            ⏳ Loading questions...
+            Loading questions...
         </div>
 
         <div id="results" style="display: none;">
             <h2>Generated Questions</h2>
-            <div style="margin-bottom: 15px;">
-                <button onclick="exportQuestions('json')">📥 Export JSON</button>
-                <button onclick="exportQuestions('text')">📄 Export TXT</button>
-            </div>
             <div id="questions-list"></div>
-        </div>
-
-        <div id="statistics" style="display: none;">
-            <h2>📊 Statistics</h2>
-            <div id="stats-content"></div>
         </div>
     </div>
 
