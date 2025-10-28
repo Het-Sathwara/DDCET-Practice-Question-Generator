@@ -10,9 +10,33 @@ import os
 import random
 from datetime import datetime
 
+# Import Physics Generators
+from question_generator.generators.physics_generators import (
+    KinematicsGenerator,
+    NewtonLawsGenerator,
+    CircularMotionGenerator,
+    WorkEnergyGenerator,
+    OhmsLawGenerator,
+    CapacitanceGenerator,
+    HeatTransferGenerator,
+    WaveMotionGenerator
+)
+
 app = Flask(__name__)
 app.secret_key = 'your-secret-key-here-change-in-production'
 CORS(app)
+
+# Physics Generator Mapping
+PHYSICS_GENERATORS = {
+    'kinematics': KinematicsGenerator,
+    'newton_laws': NewtonLawsGenerator,
+    'circular_motion': CircularMotionGenerator,
+    'work_energy': WorkEnergyGenerator,
+    'ohms_law': OhmsLawGenerator,
+    'capacitance': CapacitanceGenerator,
+    'heat_transfer': HeatTransferGenerator,
+    'wave_motion': WaveMotionGenerator
+}
 
 # SEO Routes
 @app.route('/robots.txt')
@@ -108,36 +132,70 @@ def generate_questions():
     topic = data.get('topic')
     count = int(data.get('count', 10))
     
-    # Validate
-    if topic not in TOPICS:
-        return jsonify({'error': 'Invalid topic'}), 400
-    
+    # Validate count
     if count < 1 or count > 100:
         return jsonify({'error': 'Count must be between 1 and 100'}), 400
     
-    # Load questions
-    all_questions = load_questions(topic)
+    # Check if it's a physics topic (use generator) or math topic (use JSON)
+    if topic in PHYSICS_GENERATORS:
+        # Use Python generator for Physics
+        try:
+            generator_class = PHYSICS_GENERATORS[topic]
+            generator = generator_class()
+            
+            # Generate questions using the generator
+            questions_obj = generator.generate_questions(
+                difficulty='medium',
+                count=count,
+                question_type='all'
+            )
+            
+            # Format response
+            questions_formatted = []
+            for q in questions_obj:
+                questions_formatted.append({
+                    'id': len(questions_formatted) + 1,
+                    'question': q.question,
+                    'answer': q.answer,
+                    'solution': q.solution if hasattr(q, 'solution') else f"Apply {q.chapter} principles to solve.",
+                    'chapter': q.chapter,
+                    'source': 'Physics Generator'
+                })
+            
+        except Exception as e:
+            return jsonify({'error': f'Failed to generate physics questions: {str(e)}'}), 500
     
-    if not all_questions:
-        return jsonify({'error': 'No questions available for this topic'}), 404
-    
-    # Randomly select questions
-    if len(all_questions) >= count:
-        selected = random.sample(all_questions, count)
     else:
-        selected = all_questions
-    
-    # Format response
-    questions_formatted = []
-    for q in selected:
-        questions_formatted.append({
-            'id': q.get('id', 0),
-            'question': q.get('question', ''),
-            'answer': q.get('answer', ''),
-            'solution': q.get('solution', ''),
-            'chapter': TOPICS[topic],
-            'source': q.get('source', 'JEE/GUJCET Pattern')
-        })
+        # Use JSON for Mathematics
+        all_questions = load_questions(topic)
+        
+        if not all_questions:
+            return jsonify({'error': 'No questions available for this topic'}), 404
+        
+        # Randomly select questions
+        if len(all_questions) >= count:
+            selected = random.sample(all_questions, count)
+        else:
+            selected = all_questions
+        
+        # Format response
+        questions_formatted = []
+        for q in selected:
+            # Get topic name from nested TOPICS dict
+            topic_name = None
+            for subject in TOPICS.values():
+                if topic in subject:
+                    topic_name = subject[topic]
+                    break
+            
+            questions_formatted.append({
+                'id': q.get('id', 0),
+                'question': q.get('question', ''),
+                'answer': q.get('answer', ''),
+                'solution': q.get('solution', ''),
+                'chapter': topic_name or topic,
+                'source': q.get('source', 'JEE/GUJCET Pattern')
+            })
     
     # Store in session
     if 'generated_questions' not in session:
@@ -149,8 +207,7 @@ def generate_questions():
     return jsonify({
         'success': True,
         'questions': questions_formatted,
-        'count': len(questions_formatted),
-        'topic': TOPICS[topic]
+        'count': len(questions_formatted)
     })
 
 
