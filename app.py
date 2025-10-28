@@ -3,7 +3,7 @@ Flask Web Application - Question Generator
 Serves 27,000 questions from JSON files
 """
 
-from flask import Flask, render_template, request, jsonify, session
+from flask import Flask, render_template, request, jsonify, session, send_from_directory
 from flask_cors import CORS
 import json
 import os
@@ -13,6 +13,15 @@ from datetime import datetime
 app = Flask(__name__)
 app.secret_key = 'your-secret-key-here-change-in-production'
 CORS(app)
+
+# SEO Routes
+@app.route('/robots.txt')
+def robots():
+    return send_from_directory('static', 'robots.txt')
+
+@app.route('/sitemap.xml')
+def sitemap():
+    return send_from_directory('static', 'sitemap.xml')
 
 # Path to question banks
 QUESTION_BANKS_DIR = 'question_generator/data/question_banks'
