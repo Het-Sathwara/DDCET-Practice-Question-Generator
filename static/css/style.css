@@ -86,11 +86,6 @@ input:focus, select:focus {
     background: #FFFFFF;
 }
 
-input:disabled, select:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
 button {
     padding: 12px 24px;
     margin: 10px 8px 0 0;
@@ -198,16 +193,6 @@ h2 {
     line-height: 1.8;
 }
 
-.question-options {
-    margin: 10px 0;
-}
-
-.question-options li {
-    list-style: none;
-    padding: 5px 0;
-    padding-left: 20px;
-}
-
 .answer-box {
     background: #E8F4EA;
     border: 2px solid #90C695;
@@ -237,122 +222,69 @@ h2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
-    margin: 15px 0;
+    margin-bottom: 20px;
 }
 
 .stat-card {
-    border: 1px solid #555;
+    background: #FFF8E7;
+    border: 2px solid #D4A373;
     padding: 15px;
+    border-radius: 8px;
     text-align: center;
-    background: #1a1a1a;
 }
 
 .stat-card h3 {
-    font-size: 1.8rem;
-    color: #f5f5dc;
+    color: #8B4513;
+    font-size: 2rem;
+    margin-bottom: 5px;
 }
 
 .stat-card p {
-    font-size: 0.85rem;
-    color: #888;
+    color: #6B705C;
+    font-size: 0.9rem;
 }
 
 .stat-breakdown {
-    margin: 15px 0;
-    border: 1px solid #444;
-    padding: 10px;
-    background: #1a1a1a;
+    margin-top: 20px;
+}
+
+.stat-breakdown h3 {
+    color: #8B4513;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
 }
 
 .stat-item {
     display: flex;
     justify-content: space-between;
-    padding: 8px 0;
-    border-bottom: 1px solid #333;
+    padding: 10px 0;
+    border-bottom: 1px solid #D4A373;
 }
 
 .stat-item:last-child {
     border-bottom: none;
 }
 
-/* Actions */
-#actions {
-    border: 1px solid #555;
-    padding: 15px;
-    margin: 20px 0;
-    background: #0a0a0a;
-}
-
-/* Footer */
-footer {
-    border-top: 1px solid #444;
-    padding: 15px 0;
-    text-align: center;
-    margin-top: 30px;
-    color: #888;
-    font-size: 0.85rem;
-}
-
-footer a {
-    color: #f5f5dc;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Alerts */
-.alert {
-    border: 1px solid #666;
-    padding: 10px;
-    margin: 15px 0;
-    background: #1a1a1a;
-}
-
-.alert-success {
-    border-color: #666;
-    color: #f5f5dc;
-}
-
-.alert-error {
-    border-color: #666;
-    color: #ccc;
-}
-
-.alert-info {
-    border-color: #666;
-    color: #ccc;
-}
-
-/* Mobile */
+/* Mobile Responsive */
 @media (max-width: 600px) {
     body {
-        font-size: 14px;
+        padding: 10px;
     }
     
     header h1 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+    }
+    
+    .stats {
+        font-size: 0.85rem;
     }
     
     button {
-        width: 100%;
-        margin: 5px 0;
+        padding: 10px 16px;
+        font-size: 0.9rem;
     }
     
-    .stats-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Print */
-@media print {
-    body {
-        background: white;
-        color: black;
-    }
-    
-    button, #actions, footer {
-        display: none;
+    .question-item {
+        padding: 15px;
     }
 }
