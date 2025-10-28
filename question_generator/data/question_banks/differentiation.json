@@ -1,0 +1,2597 @@
+{
+  "chapter": "Differentiation",
+  "questions": [
+    {
+      "id": 1,
+      "question": "6790, 6791, 6792, 6793, 6794, 6795, 6796, 6797, 6798, 6799",
+      "answer": "Apply standard methods",
+      "solution": "Apply standard methods",
+      "source": "www.mathsisfun.com"
+    },
+    {
+      "id": 2,
+      "question": "Example: the functionf(x)=x2The slope formula is:f(x+Δx) − f(x)ΔxUsef(x)=x2:(x+Δx)2− x2ΔxExpand(x+Δx)2to x2+2x Δx+(Δx)2:x2+ 2x Δx + (Δx)2− x2ΔxSimplify (x2and −x2cancel):2x Δx + (Δx)2ΔxSimplify more (divide through byΔx):2x + ΔxThen,asΔxheads towards 0we get:2xResult: the derivative ofx2is2xIn other words, the slope at x is2x",
+      "answer": "Apply standard methods",
+      "solution": "Apply standard methods",
+      "source": "www.mathsisfun.com"
+    },
+    {
+      "id": 3,
+      "question": "Example: What isddxx3?We knowf(x)=x3, and can calculatef(x+Δx), so let's go:The slope formula:f(x+Δx) − f(x)ΔxUsef(x)=x3:(x+Δx)3− x3ΔxUse (x+Δx)3=x3+ 3x2Δx + 3x (Δx)2+ (Δx)3Replace (x+Δx)3:x3+ 3x2Δx + 3x (Δx)2+ (Δx)3− x3ΔxSimplify (x3and −x3cancel):3x2Δx + 3x (Δx)2+ (Δx)3ΔxSimplify more (divide through byΔx):3x2+ 3x Δx + (Δx)2AsΔxheads towards 0 we get:3x2Result: the derivative ofx3is3x2",
+      "answer": "Apply standard methods",
+      "solution": "Apply standard methods",
+      "source": "www.mathsisfun.com"
+    },
+    {
+      "id": 4,
+      "question": "Example: what is the derivative of sin(x) ?OnDerivative Rulesit is listed as beingcos(x)Done.",
+      "answer": "Apply standard methods",
+      "solution": "Apply standard methods",
+      "source": "www.mathsisfun.com"
+    },
+    {
+      "id": 5,
+      "question": "Example: what is the derivative of cos(x)sin(x) ?We get awronganswer if we try to multiply the derivative of cos(x) by the derivative of sin(x) ... !Instead we use the \"Product Rule\" as explained on theDerivative Rulespage.And it actually works out to becos2(x) − sin2(x)",
+      "answer": "Apply standard methods",
+      "solution": "Apply standard methods",
+      "source": "www.mathsisfun.com"
+    },
+    {
+      "id": 6,
+      "question": "Differentiate: y = 1x^6 + 4x^4",
+      "answer": "6x^5 + 16x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^6) = 6x^5\nStep 3: d/dx(4x^4) = 16x^3\nAnswer: 6x^5 + 16x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 7,
+      "question": "Differentiate: y = 5x^3 + 1x^5",
+      "answer": "15x^2 + 5x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^3) = 15x^2\nStep 3: d/dx(1x^5) = 5x^4\nAnswer: 15x^2 + 5x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 8,
+      "question": "Find dy/dx using product rule: y = x^2 × sin(x)",
+      "answer": "2x^1·sin(x) + x^2·cos(x)",
+      "solution": "Step 1: Product rule: (uv)' = u'v + uv'\nStep 2: u = x^2, u' = 2x^1\nStep 3: v = sin(x), v' = cos(x)\nAnswer: 2x^1·sin(x) + x^2·cos(x)",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 9,
+      "question": "Find dy/dx if y = x^4",
+      "answer": "4x^3",
+      "solution": "Step 1: Use power rule d/dx(x^n) = nx^(n-1)\nStep 2: dy/dx = 4x^3\nAnswer: 4x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 10,
+      "question": "Find dy/dx: y = sin(4x)",
+      "answer": "4cos(4x)",
+      "solution": "Step 1: Use chain rule\nStep 2: d/dx[sin(4x)] = cos(4x) × 4\nAnswer: 4cos(4x)",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 11,
+      "question": "Differentiate: y = e^(4x)",
+      "answer": "4e^(4x)",
+      "solution": "Step 1: d/dx(e^kx) = k × e^kx\nStep 2: dy/dx = 4 × e^(4x)\nAnswer: 4e^(4x)",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 12,
+      "question": "Differentiate: y = e^(3x)",
+      "answer": "3e^(3x)",
+      "solution": "Step 1: d/dx(e^kx) = k × e^kx\nStep 2: dy/dx = 3 × e^(3x)\nAnswer: 3e^(3x)",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 13,
+      "question": "Differentiate: y = e^(5x)",
+      "answer": "5e^(5x)",
+      "solution": "Step 1: d/dx(e^kx) = k × e^kx\nStep 2: dy/dx = 5 × e^(5x)\nAnswer: 5e^(5x)",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 14,
+      "question": "Find dy/dx: y = sin(5x)",
+      "answer": "5cos(5x)",
+      "solution": "Step 1: Use chain rule\nStep 2: d/dx[sin(5x)] = cos(5x) × 5\nAnswer: 5cos(5x)",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 15,
+      "question": "Find dy/dx if y = x^5",
+      "answer": "5x^4",
+      "solution": "Step 1: Use power rule d/dx(x^n) = nx^(n-1)\nStep 2: dy/dx = 5x^4\nAnswer: 5x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 16,
+      "question": "Find dy/dx: y = sin(6x)",
+      "answer": "6cos(6x)",
+      "solution": "Step 1: Use chain rule\nStep 2: d/dx[sin(6x)] = cos(6x) × 6\nAnswer: 6cos(6x)",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 17,
+      "question": "Find dy/dx using product rule: y = x^5 × sin(x)",
+      "answer": "5x^4·sin(x) + x^5·cos(x)",
+      "solution": "Step 1: Product rule: (uv)' = u'v + uv'\nStep 2: u = x^5, u' = 5x^4\nStep 3: v = sin(x), v' = cos(x)\nAnswer: 5x^4·sin(x) + x^5·cos(x)",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 18,
+      "question": "Differentiate: y = 4x^4 + 3x^5",
+      "answer": "16x^3 + 15x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^4) = 16x^3\nStep 3: d/dx(3x^5) = 15x^4\nAnswer: 16x^3 + 15x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 19,
+      "question": "Find dy/dx using product rule: y = x^6 × sin(x)",
+      "answer": "6x^5·sin(x) + x^6·cos(x)",
+      "solution": "Step 1: Product rule: (uv)' = u'v + uv'\nStep 2: u = x^6, u' = 6x^5\nStep 3: v = sin(x), v' = cos(x)\nAnswer: 6x^5·sin(x) + x^6·cos(x)",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 20,
+      "question": "Find dy/dx if y = x^3",
+      "answer": "3x^2",
+      "solution": "Step 1: Use power rule d/dx(x^n) = nx^(n-1)\nStep 2: dy/dx = 3x^2\nAnswer: 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 21,
+      "question": "Find dy/dx using product rule: y = x^3 × sin(x)",
+      "answer": "3x^2·sin(x) + x^3·cos(x)",
+      "solution": "Step 1: Product rule: (uv)' = u'v + uv'\nStep 2: u = x^3, u' = 3x^2\nStep 3: v = sin(x), v' = cos(x)\nAnswer: 3x^2·sin(x) + x^3·cos(x)",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 22,
+      "question": "Differentiate: y = 5x^4 + 3x^4",
+      "answer": "20x^3 + 12x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^4) = 20x^3\nStep 3: d/dx(3x^4) = 12x^3\nAnswer: 20x^3 + 12x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 23,
+      "question": "Find dy/dx: y = sin(3x)",
+      "answer": "3cos(3x)",
+      "solution": "Step 1: Use chain rule\nStep 2: d/dx[sin(3x)] = cos(3x) × 3\nAnswer: 3cos(3x)",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 24,
+      "question": "Differentiate: y = 1x^2 + 2x^3",
+      "answer": "2x^1 + 6x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^2) = 2x^1\nStep 3: d/dx(2x^3) = 6x^2\nAnswer: 2x^1 + 6x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 25,
+      "question": "Find dy/dx: y = sin(2x)",
+      "answer": "2cos(2x)",
+      "solution": "Step 1: Use chain rule\nStep 2: d/dx[sin(2x)] = cos(2x) × 2\nAnswer: 2cos(2x)",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 26,
+      "question": "Differentiate: y = 3x^6 + 5x^5",
+      "answer": "18x^5 + 25x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^6) = 18x^5\nStep 3: d/dx(5x^5) = 25x^4\nAnswer: 18x^5 + 25x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 27,
+      "question": "Differentiate: y = 1x^6 + 4x^2",
+      "answer": "6x^5 + 8x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^6) = 6x^5\nStep 3: d/dx(4x^2) = 8x^1\nAnswer: 6x^5 + 8x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 28,
+      "question": "Find dy/dx using product rule: y = x^4 × sin(x)",
+      "answer": "4x^3·sin(x) + x^4·cos(x)",
+      "solution": "Step 1: Product rule: (uv)' = u'v + uv'\nStep 2: u = x^4, u' = 4x^3\nStep 3: v = sin(x), v' = cos(x)\nAnswer: 4x^3·sin(x) + x^4·cos(x)",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 29,
+      "question": "Differentiate: y = 5x^3 + 2x^3",
+      "answer": "15x^2 + 6x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^3) = 15x^2\nStep 3: d/dx(2x^3) = 6x^2\nAnswer: 15x^2 + 6x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 30,
+      "question": "Differentiate: y = 3x^4 + 2x^4",
+      "answer": "12x^3 + 8x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^4) = 12x^3\nStep 3: d/dx(2x^4) = 8x^3\nAnswer: 12x^3 + 8x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 31,
+      "question": "Differentiate: y = e^(6x)",
+      "answer": "6e^(6x)",
+      "solution": "Step 1: d/dx(e^kx) = k × e^kx\nStep 2: dy/dx = 6 × e^(6x)\nAnswer: 6e^(6x)",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 32,
+      "question": "Differentiate: y = 3x^5 + 5x^2",
+      "answer": "15x^4 + 10x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^5) = 15x^4\nStep 3: d/dx(5x^2) = 10x^1\nAnswer: 15x^4 + 10x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 33,
+      "question": "Differentiate: y = 2x^4 + 4x^5",
+      "answer": "8x^3 + 20x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^4) = 8x^3\nStep 3: d/dx(4x^5) = 20x^4\nAnswer: 8x^3 + 20x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 34,
+      "question": "Find dy/dx if y = x^2",
+      "answer": "2x^1",
+      "solution": "Step 1: Use power rule d/dx(x^n) = nx^(n-1)\nStep 2: dy/dx = 2x^1\nAnswer: 2x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 35,
+      "question": "Find dy/dx if y = x^6",
+      "answer": "6x^5",
+      "solution": "Step 1: Use power rule d/dx(x^n) = nx^(n-1)\nStep 2: dy/dx = 6x^5\nAnswer: 6x^5",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 36,
+      "question": "Differentiate: y = 4x^3 + 4x^3",
+      "answer": "12x^2 + 12x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^3) = 12x^2\nStep 3: d/dx(4x^3) = 12x^2\nAnswer: 12x^2 + 12x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 37,
+      "question": "Differentiate: y = 3x^3 + 2x^5",
+      "answer": "9x^2 + 10x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^3) = 9x^2\nStep 3: d/dx(2x^5) = 10x^4\nAnswer: 9x^2 + 10x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 38,
+      "question": "Differentiate: y = e^(2x)",
+      "answer": "2e^(2x)",
+      "solution": "Step 1: d/dx(e^kx) = k × e^kx\nStep 2: dy/dx = 2 × e^(2x)\nAnswer: 2e^(2x)",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 39,
+      "question": "Differentiate: y = 1x^3 + 4x^3",
+      "answer": "3x^2 + 12x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^3) = 3x^2\nStep 3: d/dx(4x^3) = 12x^2\nAnswer: 3x^2 + 12x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 40,
+      "question": "Differentiate: y = 5x^2 + 4x^3",
+      "answer": "10x^1 + 12x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^2) = 10x^1\nStep 3: d/dx(4x^3) = 12x^2\nAnswer: 10x^1 + 12x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 41,
+      "question": "Differentiate: y = 2x^3 + 4x^3",
+      "answer": "6x^2 + 12x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^3) = 6x^2\nStep 3: d/dx(4x^3) = 12x^2\nAnswer: 6x^2 + 12x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 42,
+      "question": "Differentiate: y = 5x^4 + 2x^4",
+      "answer": "20x^3 + 8x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^4) = 20x^3\nStep 3: d/dx(2x^4) = 8x^3\nAnswer: 20x^3 + 8x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 43,
+      "question": "Differentiate: y = 2x^6 + 5x^3",
+      "answer": "12x^5 + 15x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^6) = 12x^5\nStep 3: d/dx(5x^3) = 15x^2\nAnswer: 12x^5 + 15x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 44,
+      "question": "Differentiate: y = 3x^4 + 5x^2",
+      "answer": "12x^3 + 10x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^4) = 12x^3\nStep 3: d/dx(5x^2) = 10x^1\nAnswer: 12x^3 + 10x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 45,
+      "question": "Differentiate: y = 5x^3 + 4x^4",
+      "answer": "15x^2 + 16x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^3) = 15x^2\nStep 3: d/dx(4x^4) = 16x^3\nAnswer: 15x^2 + 16x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 46,
+      "question": "Differentiate: y = 2x^6 + 4x^5",
+      "answer": "12x^5 + 20x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^6) = 12x^5\nStep 3: d/dx(4x^5) = 20x^4\nAnswer: 12x^5 + 20x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 47,
+      "question": "Differentiate: y = 5x^5 + 3x^5",
+      "answer": "25x^4 + 15x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^5) = 25x^4\nStep 3: d/dx(3x^5) = 15x^4\nAnswer: 25x^4 + 15x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 48,
+      "question": "Differentiate: y = 1x^6 + 5x^3",
+      "answer": "6x^5 + 15x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^6) = 6x^5\nStep 3: d/dx(5x^3) = 15x^2\nAnswer: 6x^5 + 15x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 49,
+      "question": "Differentiate: y = 1x^6 + 2x^4",
+      "answer": "6x^5 + 8x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^6) = 6x^5\nStep 3: d/dx(2x^4) = 8x^3\nAnswer: 6x^5 + 8x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 50,
+      "question": "Differentiate: y = 2x^2 + 2x^2",
+      "answer": "4x^1 + 4x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^2) = 4x^1\nStep 3: d/dx(2x^2) = 4x^1\nAnswer: 4x^1 + 4x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 51,
+      "question": "Differentiate: y = 3x^3 + 5x^2",
+      "answer": "9x^2 + 10x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^3) = 9x^2\nStep 3: d/dx(5x^2) = 10x^1\nAnswer: 9x^2 + 10x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 52,
+      "question": "Differentiate: y = 1x^2 + 2x^5",
+      "answer": "2x^1 + 10x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^2) = 2x^1\nStep 3: d/dx(2x^5) = 10x^4\nAnswer: 2x^1 + 10x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 53,
+      "question": "Differentiate: y = 2x^5 + 1x^3",
+      "answer": "10x^4 + 3x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^5) = 10x^4\nStep 3: d/dx(1x^3) = 3x^2\nAnswer: 10x^4 + 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 54,
+      "question": "Differentiate: y = 3x^2 + 2x^2",
+      "answer": "6x^1 + 4x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^2) = 6x^1\nStep 3: d/dx(2x^2) = 4x^1\nAnswer: 6x^1 + 4x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 55,
+      "question": "Differentiate: y = 5x^2 + 1x^3",
+      "answer": "10x^1 + 3x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^2) = 10x^1\nStep 3: d/dx(1x^3) = 3x^2\nAnswer: 10x^1 + 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 56,
+      "question": "Differentiate: y = 5x^6 + 5x^5",
+      "answer": "30x^5 + 25x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^6) = 30x^5\nStep 3: d/dx(5x^5) = 25x^4\nAnswer: 30x^5 + 25x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 57,
+      "question": "Differentiate: y = 3x^5 + 4x^4",
+      "answer": "15x^4 + 16x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^5) = 15x^4\nStep 3: d/dx(4x^4) = 16x^3\nAnswer: 15x^4 + 16x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 58,
+      "question": "Differentiate: y = 5x^2 + 1x^4",
+      "answer": "10x^1 + 4x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^2) = 10x^1\nStep 3: d/dx(1x^4) = 4x^3\nAnswer: 10x^1 + 4x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 59,
+      "question": "Differentiate: y = 3x^5 + 1x^3",
+      "answer": "15x^4 + 3x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^5) = 15x^4\nStep 3: d/dx(1x^3) = 3x^2\nAnswer: 15x^4 + 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 60,
+      "question": "Differentiate: y = 5x^5 + 3x^3",
+      "answer": "25x^4 + 9x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^5) = 25x^4\nStep 3: d/dx(3x^3) = 9x^2\nAnswer: 25x^4 + 9x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 61,
+      "question": "Differentiate: y = 2x^5 + 1x^4",
+      "answer": "10x^4 + 4x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^5) = 10x^4\nStep 3: d/dx(1x^4) = 4x^3\nAnswer: 10x^4 + 4x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 62,
+      "question": "Differentiate: y = 4x^3 + 3x^4",
+      "answer": "12x^2 + 12x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^3) = 12x^2\nStep 3: d/dx(3x^4) = 12x^3\nAnswer: 12x^2 + 12x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 63,
+      "question": "Differentiate: y = 4x^4 + 4x^4",
+      "answer": "16x^3 + 16x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^4) = 16x^3\nStep 3: d/dx(4x^4) = 16x^3\nAnswer: 16x^3 + 16x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 64,
+      "question": "Differentiate: y = 5x^4 + 4x^2",
+      "answer": "20x^3 + 8x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^4) = 20x^3\nStep 3: d/dx(4x^2) = 8x^1\nAnswer: 20x^3 + 8x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 65,
+      "question": "Differentiate: y = 1x^6 + 1x^5",
+      "answer": "6x^5 + 5x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^6) = 6x^5\nStep 3: d/dx(1x^5) = 5x^4\nAnswer: 6x^5 + 5x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 66,
+      "question": "Differentiate: y = 5x^3 + 4x^5",
+      "answer": "15x^2 + 20x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^3) = 15x^2\nStep 3: d/dx(4x^5) = 20x^4\nAnswer: 15x^2 + 20x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 67,
+      "question": "Differentiate: y = 3x^4 + 5x^5",
+      "answer": "12x^3 + 25x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^4) = 12x^3\nStep 3: d/dx(5x^5) = 25x^4\nAnswer: 12x^3 + 25x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 68,
+      "question": "Differentiate: y = 1x^3 + 2x^2",
+      "answer": "3x^2 + 4x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^3) = 3x^2\nStep 3: d/dx(2x^2) = 4x^1\nAnswer: 3x^2 + 4x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 69,
+      "question": "Differentiate: y = 4x^4 + 2x^3",
+      "answer": "16x^3 + 6x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^4) = 16x^3\nStep 3: d/dx(2x^3) = 6x^2\nAnswer: 16x^3 + 6x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 70,
+      "question": "Differentiate: y = 4x^3 + 1x^2",
+      "answer": "12x^2 + 2x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^3) = 12x^2\nStep 3: d/dx(1x^2) = 2x^1\nAnswer: 12x^2 + 2x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 71,
+      "question": "Differentiate: y = 4x^6 + 5x^3",
+      "answer": "24x^5 + 15x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^6) = 24x^5\nStep 3: d/dx(5x^3) = 15x^2\nAnswer: 24x^5 + 15x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 72,
+      "question": "Differentiate: y = 2x^6 + 1x^5",
+      "answer": "12x^5 + 5x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^6) = 12x^5\nStep 3: d/dx(1x^5) = 5x^4\nAnswer: 12x^5 + 5x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 73,
+      "question": "Differentiate: y = 4x^2 + 3x^4",
+      "answer": "8x^1 + 12x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^2) = 8x^1\nStep 3: d/dx(3x^4) = 12x^3\nAnswer: 8x^1 + 12x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 74,
+      "question": "Differentiate: y = 2x^5 + 1x^5",
+      "answer": "10x^4 + 5x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^5) = 10x^4\nStep 3: d/dx(1x^5) = 5x^4\nAnswer: 10x^4 + 5x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 75,
+      "question": "Differentiate: y = 5x^5 + 4x^5",
+      "answer": "25x^4 + 20x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^5) = 25x^4\nStep 3: d/dx(4x^5) = 20x^4\nAnswer: 25x^4 + 20x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 76,
+      "question": "Differentiate: y = 5x^2 + 2x^4",
+      "answer": "10x^1 + 8x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^2) = 10x^1\nStep 3: d/dx(2x^4) = 8x^3\nAnswer: 10x^1 + 8x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 77,
+      "question": "Differentiate: y = 4x^4 + 5x^2",
+      "answer": "16x^3 + 10x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^4) = 16x^3\nStep 3: d/dx(5x^2) = 10x^1\nAnswer: 16x^3 + 10x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 78,
+      "question": "Differentiate: y = 2x^6 + 1x^3",
+      "answer": "12x^5 + 3x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^6) = 12x^5\nStep 3: d/dx(1x^3) = 3x^2\nAnswer: 12x^5 + 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 79,
+      "question": "Differentiate: y = 2x^5 + 1x^2",
+      "answer": "10x^4 + 2x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^5) = 10x^4\nStep 3: d/dx(1x^2) = 2x^1\nAnswer: 10x^4 + 2x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 80,
+      "question": "Differentiate: y = 5x^6 + 5x^2",
+      "answer": "30x^5 + 10x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^6) = 30x^5\nStep 3: d/dx(5x^2) = 10x^1\nAnswer: 30x^5 + 10x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 81,
+      "question": "Differentiate: y = 5x^4 + 2x^3",
+      "answer": "20x^3 + 6x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^4) = 20x^3\nStep 3: d/dx(2x^3) = 6x^2\nAnswer: 20x^3 + 6x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 82,
+      "question": "Differentiate: y = 5x^4 + 1x^5",
+      "answer": "20x^3 + 5x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^4) = 20x^3\nStep 3: d/dx(1x^5) = 5x^4\nAnswer: 20x^3 + 5x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 83,
+      "question": "Differentiate: y = 5x^6 + 2x^3",
+      "answer": "30x^5 + 6x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^6) = 30x^5\nStep 3: d/dx(2x^3) = 6x^2\nAnswer: 30x^5 + 6x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 84,
+      "question": "Differentiate: y = 2x^2 + 4x^3",
+      "answer": "4x^1 + 12x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^2) = 4x^1\nStep 3: d/dx(4x^3) = 12x^2\nAnswer: 4x^1 + 12x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 85,
+      "question": "Differentiate: y = 2x^4 + 1x^4",
+      "answer": "8x^3 + 4x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^4) = 8x^3\nStep 3: d/dx(1x^4) = 4x^3\nAnswer: 8x^3 + 4x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 86,
+      "question": "Differentiate: y = 4x^2 + 4x^4",
+      "answer": "8x^1 + 16x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^2) = 8x^1\nStep 3: d/dx(4x^4) = 16x^3\nAnswer: 8x^1 + 16x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 87,
+      "question": "Differentiate: y = 4x^3 + 5x^3",
+      "answer": "12x^2 + 15x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^3) = 12x^2\nStep 3: d/dx(5x^3) = 15x^2\nAnswer: 12x^2 + 15x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 88,
+      "question": "Differentiate: y = 3x^2 + 1x^5",
+      "answer": "6x^1 + 5x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^2) = 6x^1\nStep 3: d/dx(1x^5) = 5x^4\nAnswer: 6x^1 + 5x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 89,
+      "question": "Differentiate: y = 5x^3 + 5x^2",
+      "answer": "15x^2 + 10x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^3) = 15x^2\nStep 3: d/dx(5x^2) = 10x^1\nAnswer: 15x^2 + 10x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 90,
+      "question": "Differentiate: y = 1x^6 + 5x^4",
+      "answer": "6x^5 + 20x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^6) = 6x^5\nStep 3: d/dx(5x^4) = 20x^3\nAnswer: 6x^5 + 20x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 91,
+      "question": "Differentiate: y = 1x^2 + 4x^3",
+      "answer": "2x^1 + 12x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^2) = 2x^1\nStep 3: d/dx(4x^3) = 12x^2\nAnswer: 2x^1 + 12x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 92,
+      "question": "Differentiate: y = 4x^5 + 1x^5",
+      "answer": "20x^4 + 5x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^5) = 20x^4\nStep 3: d/dx(1x^5) = 5x^4\nAnswer: 20x^4 + 5x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 93,
+      "question": "Differentiate: y = 4x^3 + 1x^3",
+      "answer": "12x^2 + 3x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^3) = 12x^2\nStep 3: d/dx(1x^3) = 3x^2\nAnswer: 12x^2 + 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 94,
+      "question": "Differentiate: y = 4x^6 + 3x^3",
+      "answer": "24x^5 + 9x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^6) = 24x^5\nStep 3: d/dx(3x^3) = 9x^2\nAnswer: 24x^5 + 9x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 95,
+      "question": "Differentiate: y = 2x^6 + 5x^2",
+      "answer": "12x^5 + 10x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^6) = 12x^5\nStep 3: d/dx(5x^2) = 10x^1\nAnswer: 12x^5 + 10x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 96,
+      "question": "Differentiate: y = 3x^6 + 3x^2",
+      "answer": "18x^5 + 6x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^6) = 18x^5\nStep 3: d/dx(3x^2) = 6x^1\nAnswer: 18x^5 + 6x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 97,
+      "question": "Differentiate: y = 4x^2 + 1x^4",
+      "answer": "8x^1 + 4x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^2) = 8x^1\nStep 3: d/dx(1x^4) = 4x^3\nAnswer: 8x^1 + 4x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 98,
+      "question": "Differentiate: y = 5x^4 + 3x^3",
+      "answer": "20x^3 + 9x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^4) = 20x^3\nStep 3: d/dx(3x^3) = 9x^2\nAnswer: 20x^3 + 9x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 99,
+      "question": "Differentiate: y = 3x^6 + 1x^3",
+      "answer": "18x^5 + 3x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^6) = 18x^5\nStep 3: d/dx(1x^3) = 3x^2\nAnswer: 18x^5 + 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 100,
+      "question": "Differentiate: y = 4x^3 + 4x^2",
+      "answer": "12x^2 + 8x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^3) = 12x^2\nStep 3: d/dx(4x^2) = 8x^1\nAnswer: 12x^2 + 8x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 101,
+      "question": "Differentiate: y = 3x^6 + 4x^2",
+      "answer": "18x^5 + 8x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^6) = 18x^5\nStep 3: d/dx(4x^2) = 8x^1\nAnswer: 18x^5 + 8x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 102,
+      "question": "Differentiate: y = 1x^5 + 5x^3",
+      "answer": "5x^4 + 15x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^5) = 5x^4\nStep 3: d/dx(5x^3) = 15x^2\nAnswer: 5x^4 + 15x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 103,
+      "question": "Differentiate: y = 2x^2 + 5x^2",
+      "answer": "4x^1 + 10x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^2) = 4x^1\nStep 3: d/dx(5x^2) = 10x^1\nAnswer: 4x^1 + 10x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 104,
+      "question": "Differentiate: y = 2x^5 + 2x^2",
+      "answer": "10x^4 + 4x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^5) = 10x^4\nStep 3: d/dx(2x^2) = 4x^1\nAnswer: 10x^4 + 4x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 105,
+      "question": "Differentiate: y = 2x^2 + 3x^2",
+      "answer": "4x^1 + 6x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^2) = 4x^1\nStep 3: d/dx(3x^2) = 6x^1\nAnswer: 4x^1 + 6x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 106,
+      "question": "Differentiate: y = 4x^5 + 4x^4",
+      "answer": "20x^4 + 16x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^5) = 20x^4\nStep 3: d/dx(4x^4) = 16x^3\nAnswer: 20x^4 + 16x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 107,
+      "question": "Differentiate: y = 5x^2 + 1x^2",
+      "answer": "10x^1 + 2x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^2) = 10x^1\nStep 3: d/dx(1x^2) = 2x^1\nAnswer: 10x^1 + 2x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 108,
+      "question": "Differentiate: y = 5x^4 + 5x^4",
+      "answer": "20x^3 + 20x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^4) = 20x^3\nStep 3: d/dx(5x^4) = 20x^3\nAnswer: 20x^3 + 20x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 109,
+      "question": "Differentiate: y = 2x^2 + 5x^3",
+      "answer": "4x^1 + 15x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^2) = 4x^1\nStep 3: d/dx(5x^3) = 15x^2\nAnswer: 4x^1 + 15x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 110,
+      "question": "Differentiate: y = 2x^4 + 1x^2",
+      "answer": "8x^3 + 2x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^4) = 8x^3\nStep 3: d/dx(1x^2) = 2x^1\nAnswer: 8x^3 + 2x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 111,
+      "question": "Differentiate: y = 3x^3 + 1x^2",
+      "answer": "9x^2 + 2x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^3) = 9x^2\nStep 3: d/dx(1x^2) = 2x^1\nAnswer: 9x^2 + 2x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 112,
+      "question": "Differentiate: y = 1x^5 + 3x^3",
+      "answer": "5x^4 + 9x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^5) = 5x^4\nStep 3: d/dx(3x^3) = 9x^2\nAnswer: 5x^4 + 9x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 113,
+      "question": "Differentiate: y = 2x^4 + 5x^5",
+      "answer": "8x^3 + 25x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^4) = 8x^3\nStep 3: d/dx(5x^5) = 25x^4\nAnswer: 8x^3 + 25x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 114,
+      "question": "Differentiate: y = 3x^3 + 4x^3",
+      "answer": "9x^2 + 12x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^3) = 9x^2\nStep 3: d/dx(4x^3) = 12x^2\nAnswer: 9x^2 + 12x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 115,
+      "question": "Differentiate: y = 1x^5 + 3x^5",
+      "answer": "5x^4 + 15x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^5) = 5x^4\nStep 3: d/dx(3x^5) = 15x^4\nAnswer: 5x^4 + 15x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 116,
+      "question": "Differentiate: y = 1x^6 + 5x^5",
+      "answer": "6x^5 + 25x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^6) = 6x^5\nStep 3: d/dx(5x^5) = 25x^4\nAnswer: 6x^5 + 25x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 117,
+      "question": "Differentiate: y = 3x^3 + 2x^2",
+      "answer": "9x^2 + 4x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^3) = 9x^2\nStep 3: d/dx(2x^2) = 4x^1\nAnswer: 9x^2 + 4x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 118,
+      "question": "Differentiate: y = 3x^4 + 3x^3",
+      "answer": "12x^3 + 9x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^4) = 12x^3\nStep 3: d/dx(3x^3) = 9x^2\nAnswer: 12x^3 + 9x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 119,
+      "question": "Differentiate: y = 1x^3 + 4x^2",
+      "answer": "3x^2 + 8x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^3) = 3x^2\nStep 3: d/dx(4x^2) = 8x^1\nAnswer: 3x^2 + 8x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 120,
+      "question": "Differentiate: y = 5x^4 + 5x^2",
+      "answer": "20x^3 + 10x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^4) = 20x^3\nStep 3: d/dx(5x^2) = 10x^1\nAnswer: 20x^3 + 10x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 121,
+      "question": "Differentiate: y = 2x^6 + 2x^2",
+      "answer": "12x^5 + 4x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^6) = 12x^5\nStep 3: d/dx(2x^2) = 4x^1\nAnswer: 12x^5 + 4x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 122,
+      "question": "Differentiate: y = 1x^2 + 2x^4",
+      "answer": "2x^1 + 8x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^2) = 2x^1\nStep 3: d/dx(2x^4) = 8x^3\nAnswer: 2x^1 + 8x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 123,
+      "question": "Differentiate: y = 1x^3 + 5x^2",
+      "answer": "3x^2 + 10x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^3) = 3x^2\nStep 3: d/dx(5x^2) = 10x^1\nAnswer: 3x^2 + 10x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 124,
+      "question": "Differentiate: y = 5x^6 + 5x^3",
+      "answer": "30x^5 + 15x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^6) = 30x^5\nStep 3: d/dx(5x^3) = 15x^2\nAnswer: 30x^5 + 15x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 125,
+      "question": "Differentiate: y = 5x^5 + 5x^5",
+      "answer": "25x^4 + 25x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^5) = 25x^4\nStep 3: d/dx(5x^5) = 25x^4\nAnswer: 25x^4 + 25x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 126,
+      "question": "Differentiate: y = 1x^5 + 1x^3",
+      "answer": "5x^4 + 3x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^5) = 5x^4\nStep 3: d/dx(1x^3) = 3x^2\nAnswer: 5x^4 + 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 127,
+      "question": "Differentiate: y = 2x^4 + 1x^3",
+      "answer": "8x^3 + 3x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^4) = 8x^3\nStep 3: d/dx(1x^3) = 3x^2\nAnswer: 8x^3 + 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 128,
+      "question": "Differentiate: y = 2x^4 + 2x^5",
+      "answer": "8x^3 + 10x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^4) = 8x^3\nStep 3: d/dx(2x^5) = 10x^4\nAnswer: 8x^3 + 10x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 129,
+      "question": "Differentiate: y = 1x^4 + 4x^5",
+      "answer": "4x^3 + 20x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^4) = 4x^3\nStep 3: d/dx(4x^5) = 20x^4\nAnswer: 4x^3 + 20x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 130,
+      "question": "Differentiate: y = 2x^6 + 5x^5",
+      "answer": "12x^5 + 25x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^6) = 12x^5\nStep 3: d/dx(5x^5) = 25x^4\nAnswer: 12x^5 + 25x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 131,
+      "question": "Differentiate: y = 4x^2 + 2x^4",
+      "answer": "8x^1 + 8x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^2) = 8x^1\nStep 3: d/dx(2x^4) = 8x^3\nAnswer: 8x^1 + 8x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 132,
+      "question": "Differentiate: y = 2x^6 + 3x^2",
+      "answer": "12x^5 + 6x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^6) = 12x^5\nStep 3: d/dx(3x^2) = 6x^1\nAnswer: 12x^5 + 6x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 133,
+      "question": "Differentiate: y = 3x^6 + 3x^4",
+      "answer": "18x^5 + 12x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^6) = 18x^5\nStep 3: d/dx(3x^4) = 12x^3\nAnswer: 18x^5 + 12x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 134,
+      "question": "Differentiate: y = 3x^4 + 1x^4",
+      "answer": "12x^3 + 4x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^4) = 12x^3\nStep 3: d/dx(1x^4) = 4x^3\nAnswer: 12x^3 + 4x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 135,
+      "question": "Differentiate: y = 4x^5 + 2x^2",
+      "answer": "20x^4 + 4x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^5) = 20x^4\nStep 3: d/dx(2x^2) = 4x^1\nAnswer: 20x^4 + 4x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 136,
+      "question": "Differentiate: y = 3x^2 + 4x^4",
+      "answer": "6x^1 + 16x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^2) = 6x^1\nStep 3: d/dx(4x^4) = 16x^3\nAnswer: 6x^1 + 16x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 137,
+      "question": "Differentiate: y = 2x^6 + 5x^4",
+      "answer": "12x^5 + 20x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^6) = 12x^5\nStep 3: d/dx(5x^4) = 20x^3\nAnswer: 12x^5 + 20x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 138,
+      "question": "Differentiate: y = 3x^2 + 3x^2",
+      "answer": "6x^1 + 6x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^2) = 6x^1\nStep 3: d/dx(3x^2) = 6x^1\nAnswer: 6x^1 + 6x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 139,
+      "question": "Differentiate: y = 5x^6 + 4x^2",
+      "answer": "30x^5 + 8x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^6) = 30x^5\nStep 3: d/dx(4x^2) = 8x^1\nAnswer: 30x^5 + 8x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 140,
+      "question": "Differentiate: y = 3x^6 + 3x^5",
+      "answer": "18x^5 + 15x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^6) = 18x^5\nStep 3: d/dx(3x^5) = 15x^4\nAnswer: 18x^5 + 15x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 141,
+      "question": "Differentiate: y = 5x^4 + 2x^5",
+      "answer": "20x^3 + 10x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^4) = 20x^3\nStep 3: d/dx(2x^5) = 10x^4\nAnswer: 20x^3 + 10x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 142,
+      "question": "Differentiate: y = 2x^6 + 2x^4",
+      "answer": "12x^5 + 8x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^6) = 12x^5\nStep 3: d/dx(2x^4) = 8x^3\nAnswer: 12x^5 + 8x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 143,
+      "question": "Differentiate: y = 4x^2 + 2x^2",
+      "answer": "8x^1 + 4x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^2) = 8x^1\nStep 3: d/dx(2x^2) = 4x^1\nAnswer: 8x^1 + 4x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 144,
+      "question": "Differentiate: y = 4x^6 + 1x^4",
+      "answer": "24x^5 + 4x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^6) = 24x^5\nStep 3: d/dx(1x^4) = 4x^3\nAnswer: 24x^5 + 4x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 145,
+      "question": "Differentiate: y = 4x^5 + 2x^4",
+      "answer": "20x^4 + 8x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^5) = 20x^4\nStep 3: d/dx(2x^4) = 8x^3\nAnswer: 20x^4 + 8x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 146,
+      "question": "Differentiate: y = 3x^2 + 1x^3",
+      "answer": "6x^1 + 3x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^2) = 6x^1\nStep 3: d/dx(1x^3) = 3x^2\nAnswer: 6x^1 + 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 147,
+      "question": "Differentiate: y = 4x^6 + 2x^4",
+      "answer": "24x^5 + 8x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^6) = 24x^5\nStep 3: d/dx(2x^4) = 8x^3\nAnswer: 24x^5 + 8x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 148,
+      "question": "Differentiate: y = 5x^3 + 1x^2",
+      "answer": "15x^2 + 2x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^3) = 15x^2\nStep 3: d/dx(1x^2) = 2x^1\nAnswer: 15x^2 + 2x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 149,
+      "question": "Differentiate: y = 4x^3 + 2x^4",
+      "answer": "12x^2 + 8x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^3) = 12x^2\nStep 3: d/dx(2x^4) = 8x^3\nAnswer: 12x^2 + 8x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 150,
+      "question": "Differentiate: y = 2x^3 + 5x^5",
+      "answer": "6x^2 + 25x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^3) = 6x^2\nStep 3: d/dx(5x^5) = 25x^4\nAnswer: 6x^2 + 25x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 151,
+      "question": "Differentiate: y = 4x^4 + 1x^4",
+      "answer": "16x^3 + 4x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^4) = 16x^3\nStep 3: d/dx(1x^4) = 4x^3\nAnswer: 16x^3 + 4x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 152,
+      "question": "Differentiate: y = 4x^4 + 5x^5",
+      "answer": "16x^3 + 25x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^4) = 16x^3\nStep 3: d/dx(5x^5) = 25x^4\nAnswer: 16x^3 + 25x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 153,
+      "question": "Differentiate: y = 4x^5 + 5x^4",
+      "answer": "20x^4 + 20x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^5) = 20x^4\nStep 3: d/dx(5x^4) = 20x^3\nAnswer: 20x^4 + 20x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 154,
+      "question": "Differentiate: y = 4x^2 + 2x^3",
+      "answer": "8x^1 + 6x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^2) = 8x^1\nStep 3: d/dx(2x^3) = 6x^2\nAnswer: 8x^1 + 6x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 155,
+      "question": "Differentiate: y = 4x^4 + 5x^4",
+      "answer": "16x^3 + 20x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^4) = 16x^3\nStep 3: d/dx(5x^4) = 20x^3\nAnswer: 16x^3 + 20x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 156,
+      "question": "Differentiate: y = 3x^4 + 5x^4",
+      "answer": "12x^3 + 20x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^4) = 12x^3\nStep 3: d/dx(5x^4) = 20x^3\nAnswer: 12x^3 + 20x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 157,
+      "question": "Differentiate: y = 1x^6 + 2x^2",
+      "answer": "6x^5 + 4x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^6) = 6x^5\nStep 3: d/dx(2x^2) = 4x^1\nAnswer: 6x^5 + 4x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 158,
+      "question": "Differentiate: y = 4x^5 + 5x^2",
+      "answer": "20x^4 + 10x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^5) = 20x^4\nStep 3: d/dx(5x^2) = 10x^1\nAnswer: 20x^4 + 10x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 159,
+      "question": "Differentiate: y = 2x^3 + 3x^4",
+      "answer": "6x^2 + 12x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^3) = 6x^2\nStep 3: d/dx(3x^4) = 12x^3\nAnswer: 6x^2 + 12x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 160,
+      "question": "Differentiate: y = 2x^4 + 2x^3",
+      "answer": "8x^3 + 6x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^4) = 8x^3\nStep 3: d/dx(2x^3) = 6x^2\nAnswer: 8x^3 + 6x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 161,
+      "question": "Differentiate: y = 2x^4 + 2x^4",
+      "answer": "8x^3 + 8x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^4) = 8x^3\nStep 3: d/dx(2x^4) = 8x^3\nAnswer: 8x^3 + 8x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 162,
+      "question": "Differentiate: y = 2x^3 + 1x^4",
+      "answer": "6x^2 + 4x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^3) = 6x^2\nStep 3: d/dx(1x^4) = 4x^3\nAnswer: 6x^2 + 4x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 163,
+      "question": "Differentiate: y = 4x^6 + 3x^4",
+      "answer": "24x^5 + 12x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^6) = 24x^5\nStep 3: d/dx(3x^4) = 12x^3\nAnswer: 24x^5 + 12x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 164,
+      "question": "Differentiate: y = 4x^2 + 1x^2",
+      "answer": "8x^1 + 2x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^2) = 8x^1\nStep 3: d/dx(1x^2) = 2x^1\nAnswer: 8x^1 + 2x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 165,
+      "question": "Differentiate: y = 5x^3 + 1x^4",
+      "answer": "15x^2 + 4x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^3) = 15x^2\nStep 3: d/dx(1x^4) = 4x^3\nAnswer: 15x^2 + 4x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 166,
+      "question": "Differentiate: y = 2x^3 + 1x^3",
+      "answer": "6x^2 + 3x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^3) = 6x^2\nStep 3: d/dx(1x^3) = 3x^2\nAnswer: 6x^2 + 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 167,
+      "question": "Differentiate: y = 1x^2 + 5x^3",
+      "answer": "2x^1 + 15x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^2) = 2x^1\nStep 3: d/dx(5x^3) = 15x^2\nAnswer: 2x^1 + 15x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 168,
+      "question": "Differentiate: y = 1x^5 + 4x^5",
+      "answer": "5x^4 + 20x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^5) = 5x^4\nStep 3: d/dx(4x^5) = 20x^4\nAnswer: 5x^4 + 20x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 169,
+      "question": "Differentiate: y = 3x^4 + 3x^4",
+      "answer": "12x^3 + 12x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^4) = 12x^3\nStep 3: d/dx(3x^4) = 12x^3\nAnswer: 12x^3 + 12x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 170,
+      "question": "Differentiate: y = 5x^3 + 2x^2",
+      "answer": "15x^2 + 4x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^3) = 15x^2\nStep 3: d/dx(2x^2) = 4x^1\nAnswer: 15x^2 + 4x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 171,
+      "question": "Differentiate: y = 1x^5 + 2x^3",
+      "answer": "5x^4 + 6x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^5) = 5x^4\nStep 3: d/dx(2x^3) = 6x^2\nAnswer: 5x^4 + 6x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 172,
+      "question": "Differentiate: y = 3x^5 + 1x^2",
+      "answer": "15x^4 + 2x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^5) = 15x^4\nStep 3: d/dx(1x^2) = 2x^1\nAnswer: 15x^4 + 2x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 173,
+      "question": "Differentiate: y = 3x^5 + 1x^4",
+      "answer": "15x^4 + 4x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^5) = 15x^4\nStep 3: d/dx(1x^4) = 4x^3\nAnswer: 15x^4 + 4x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 174,
+      "question": "Differentiate: y = 2x^5 + 3x^5",
+      "answer": "10x^4 + 15x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^5) = 10x^4\nStep 3: d/dx(3x^5) = 15x^4\nAnswer: 10x^4 + 15x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 175,
+      "question": "Differentiate: y = 1x^3 + 5x^5",
+      "answer": "3x^2 + 25x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^3) = 3x^2\nStep 3: d/dx(5x^5) = 25x^4\nAnswer: 3x^2 + 25x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 176,
+      "question": "Differentiate: y = 4x^3 + 5x^4",
+      "answer": "12x^2 + 20x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^3) = 12x^2\nStep 3: d/dx(5x^4) = 20x^3\nAnswer: 12x^2 + 20x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 177,
+      "question": "Differentiate: y = 2x^5 + 5x^2",
+      "answer": "10x^4 + 10x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^5) = 10x^4\nStep 3: d/dx(5x^2) = 10x^1\nAnswer: 10x^4 + 10x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 178,
+      "question": "Differentiate: y = 1x^6 + 3x^2",
+      "answer": "6x^5 + 6x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^6) = 6x^5\nStep 3: d/dx(3x^2) = 6x^1\nAnswer: 6x^5 + 6x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 179,
+      "question": "Differentiate: y = 2x^3 + 5x^2",
+      "answer": "6x^2 + 10x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^3) = 6x^2\nStep 3: d/dx(5x^2) = 10x^1\nAnswer: 6x^2 + 10x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 180,
+      "question": "Differentiate: y = 4x^4 + 2x^2",
+      "answer": "16x^3 + 4x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^4) = 16x^3\nStep 3: d/dx(2x^2) = 4x^1\nAnswer: 16x^3 + 4x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 181,
+      "question": "Differentiate: y = 5x^4 + 1x^4",
+      "answer": "20x^3 + 4x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^4) = 20x^3\nStep 3: d/dx(1x^4) = 4x^3\nAnswer: 20x^3 + 4x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 182,
+      "question": "Differentiate: y = 5x^3 + 5x^3",
+      "answer": "15x^2 + 15x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^3) = 15x^2\nStep 3: d/dx(5x^3) = 15x^2\nAnswer: 15x^2 + 15x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 183,
+      "question": "Differentiate: y = 3x^3 + 2x^3",
+      "answer": "9x^2 + 6x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^3) = 9x^2\nStep 3: d/dx(2x^3) = 6x^2\nAnswer: 9x^2 + 6x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 184,
+      "question": "Differentiate: y = 1x^5 + 2x^4",
+      "answer": "5x^4 + 8x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^5) = 5x^4\nStep 3: d/dx(2x^4) = 8x^3\nAnswer: 5x^4 + 8x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 185,
+      "question": "Differentiate: y = 3x^5 + 3x^5",
+      "answer": "15x^4 + 15x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^5) = 15x^4\nStep 3: d/dx(3x^5) = 15x^4\nAnswer: 15x^4 + 15x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 186,
+      "question": "Differentiate: y = 3x^4 + 5x^3",
+      "answer": "12x^3 + 15x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^4) = 12x^3\nStep 3: d/dx(5x^3) = 15x^2\nAnswer: 12x^3 + 15x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 187,
+      "question": "Differentiate: y = 4x^4 + 1x^5",
+      "answer": "16x^3 + 5x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^4) = 16x^3\nStep 3: d/dx(1x^5) = 5x^4\nAnswer: 16x^3 + 5x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 188,
+      "question": "Differentiate: y = 1x^3 + 1x^4",
+      "answer": "3x^2 + 4x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^3) = 3x^2\nStep 3: d/dx(1x^4) = 4x^3\nAnswer: 3x^2 + 4x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 189,
+      "question": "Differentiate: y = 2x^4 + 2x^2",
+      "answer": "8x^3 + 4x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^4) = 8x^3\nStep 3: d/dx(2x^2) = 4x^1\nAnswer: 8x^3 + 4x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 190,
+      "question": "Differentiate: y = 4x^5 + 3x^5",
+      "answer": "20x^4 + 15x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^5) = 20x^4\nStep 3: d/dx(3x^5) = 15x^4\nAnswer: 20x^4 + 15x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 191,
+      "question": "Differentiate: y = 4x^2 + 2x^5",
+      "answer": "8x^1 + 10x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^2) = 8x^1\nStep 3: d/dx(2x^5) = 10x^4\nAnswer: 8x^1 + 10x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 192,
+      "question": "Differentiate: y = 1x^3 + 4x^5",
+      "answer": "3x^2 + 20x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^3) = 3x^2\nStep 3: d/dx(4x^5) = 20x^4\nAnswer: 3x^2 + 20x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 193,
+      "question": "Differentiate: y = 3x^2 + 2x^4",
+      "answer": "6x^1 + 8x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^2) = 6x^1\nStep 3: d/dx(2x^4) = 8x^3\nAnswer: 6x^1 + 8x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 194,
+      "question": "Differentiate: y = 2x^5 + 2x^4",
+      "answer": "10x^4 + 8x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^5) = 10x^4\nStep 3: d/dx(2x^4) = 8x^3\nAnswer: 10x^4 + 8x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 195,
+      "question": "Differentiate: y = 3x^2 + 4x^5",
+      "answer": "6x^1 + 20x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^2) = 6x^1\nStep 3: d/dx(4x^5) = 20x^4\nAnswer: 6x^1 + 20x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 196,
+      "question": "Differentiate: y = 2x^2 + 4x^5",
+      "answer": "4x^1 + 20x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^2) = 4x^1\nStep 3: d/dx(4x^5) = 20x^4\nAnswer: 4x^1 + 20x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 197,
+      "question": "Differentiate: y = 4x^2 + 5x^4",
+      "answer": "8x^1 + 20x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^2) = 8x^1\nStep 3: d/dx(5x^4) = 20x^3\nAnswer: 8x^1 + 20x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 198,
+      "question": "Differentiate: y = 1x^4 + 2x^4",
+      "answer": "4x^3 + 8x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^4) = 4x^3\nStep 3: d/dx(2x^4) = 8x^3\nAnswer: 4x^3 + 8x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 199,
+      "question": "Differentiate: y = 5x^5 + 1x^2",
+      "answer": "25x^4 + 2x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^5) = 25x^4\nStep 3: d/dx(1x^2) = 2x^1\nAnswer: 25x^4 + 2x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 200,
+      "question": "Differentiate: y = 4x^5 + 4x^3",
+      "answer": "20x^4 + 12x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^5) = 20x^4\nStep 3: d/dx(4x^3) = 12x^2\nAnswer: 20x^4 + 12x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 201,
+      "question": "Differentiate: y = 1x^4 + 4x^2",
+      "answer": "4x^3 + 8x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^4) = 4x^3\nStep 3: d/dx(4x^2) = 8x^1\nAnswer: 4x^3 + 8x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 202,
+      "question": "Differentiate: y = 3x^6 + 2x^3",
+      "answer": "18x^5 + 6x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^6) = 18x^5\nStep 3: d/dx(2x^3) = 6x^2\nAnswer: 18x^5 + 6x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 203,
+      "question": "Differentiate: y = 4x^6 + 1x^5",
+      "answer": "24x^5 + 5x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^6) = 24x^5\nStep 3: d/dx(1x^5) = 5x^4\nAnswer: 24x^5 + 5x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 204,
+      "question": "Differentiate: y = 2x^4 + 4x^3",
+      "answer": "8x^3 + 12x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^4) = 8x^3\nStep 3: d/dx(4x^3) = 12x^2\nAnswer: 8x^3 + 12x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 205,
+      "question": "Differentiate: y = 1x^4 + 5x^4",
+      "answer": "4x^3 + 20x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^4) = 4x^3\nStep 3: d/dx(5x^4) = 20x^3\nAnswer: 4x^3 + 20x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 206,
+      "question": "Differentiate: y = 5x^6 + 1x^5",
+      "answer": "30x^5 + 5x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^6) = 30x^5\nStep 3: d/dx(1x^5) = 5x^4\nAnswer: 30x^5 + 5x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 207,
+      "question": "Differentiate: y = 1x^2 + 3x^2",
+      "answer": "2x^1 + 6x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^2) = 2x^1\nStep 3: d/dx(3x^2) = 6x^1\nAnswer: 2x^1 + 6x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 208,
+      "question": "Differentiate: y = 5x^6 + 2x^2",
+      "answer": "30x^5 + 4x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^6) = 30x^5\nStep 3: d/dx(2x^2) = 4x^1\nAnswer: 30x^5 + 4x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 209,
+      "question": "Differentiate: y = 5x^6 + 1x^4",
+      "answer": "30x^5 + 4x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^6) = 30x^5\nStep 3: d/dx(1x^4) = 4x^3\nAnswer: 30x^5 + 4x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 210,
+      "question": "Differentiate: y = 2x^2 + 1x^5",
+      "answer": "4x^1 + 5x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^2) = 4x^1\nStep 3: d/dx(1x^5) = 5x^4\nAnswer: 4x^1 + 5x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 211,
+      "question": "Differentiate: y = 2x^2 + 2x^5",
+      "answer": "4x^1 + 10x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^2) = 4x^1\nStep 3: d/dx(2x^5) = 10x^4\nAnswer: 4x^1 + 10x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 212,
+      "question": "Differentiate: y = 4x^5 + 1x^3",
+      "answer": "20x^4 + 3x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^5) = 20x^4\nStep 3: d/dx(1x^3) = 3x^2\nAnswer: 20x^4 + 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 213,
+      "question": "Differentiate: y = 2x^3 + 4x^5",
+      "answer": "6x^2 + 20x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^3) = 6x^2\nStep 3: d/dx(4x^5) = 20x^4\nAnswer: 6x^2 + 20x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 214,
+      "question": "Differentiate: y = 4x^4 + 4x^5",
+      "answer": "16x^3 + 20x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^4) = 16x^3\nStep 3: d/dx(4x^5) = 20x^4\nAnswer: 16x^3 + 20x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 215,
+      "question": "Differentiate: y = 5x^4 + 4x^3",
+      "answer": "20x^3 + 12x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^4) = 20x^3\nStep 3: d/dx(4x^3) = 12x^2\nAnswer: 20x^3 + 12x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 216,
+      "question": "Differentiate: y = 3x^2 + 3x^5",
+      "answer": "6x^1 + 15x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^2) = 6x^1\nStep 3: d/dx(3x^5) = 15x^4\nAnswer: 6x^1 + 15x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 217,
+      "question": "Differentiate: y = 2x^6 + 4x^3",
+      "answer": "12x^5 + 12x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^6) = 12x^5\nStep 3: d/dx(4x^3) = 12x^2\nAnswer: 12x^5 + 12x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 218,
+      "question": "Differentiate: y = 3x^6 + 4x^3",
+      "answer": "18x^5 + 12x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^6) = 18x^5\nStep 3: d/dx(4x^3) = 12x^2\nAnswer: 18x^5 + 12x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 219,
+      "question": "Differentiate: y = 2x^5 + 5x^4",
+      "answer": "10x^4 + 20x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^5) = 10x^4\nStep 3: d/dx(5x^4) = 20x^3\nAnswer: 10x^4 + 20x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 220,
+      "question": "Differentiate: y = 3x^5 + 5x^5",
+      "answer": "15x^4 + 25x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^5) = 15x^4\nStep 3: d/dx(5x^5) = 25x^4\nAnswer: 15x^4 + 25x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 221,
+      "question": "Differentiate: y = 4x^5 + 2x^3",
+      "answer": "20x^4 + 6x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^5) = 20x^4\nStep 3: d/dx(2x^3) = 6x^2\nAnswer: 20x^4 + 6x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 222,
+      "question": "Differentiate: y = 1x^5 + 1x^2",
+      "answer": "5x^4 + 2x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^5) = 5x^4\nStep 3: d/dx(1x^2) = 2x^1\nAnswer: 5x^4 + 2x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 223,
+      "question": "Differentiate: y = 1x^2 + 1x^3",
+      "answer": "2x^1 + 3x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^2) = 2x^1\nStep 3: d/dx(1x^3) = 3x^2\nAnswer: 2x^1 + 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 224,
+      "question": "Differentiate: y = 4x^6 + 5x^2",
+      "answer": "24x^5 + 10x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^6) = 24x^5\nStep 3: d/dx(5x^2) = 10x^1\nAnswer: 24x^5 + 10x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 225,
+      "question": "Differentiate: y = 5x^4 + 1x^2",
+      "answer": "20x^3 + 2x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^4) = 20x^3\nStep 3: d/dx(1x^2) = 2x^1\nAnswer: 20x^3 + 2x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 226,
+      "question": "Differentiate: y = 5x^2 + 5x^3",
+      "answer": "10x^1 + 15x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^2) = 10x^1\nStep 3: d/dx(5x^3) = 15x^2\nAnswer: 10x^1 + 15x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 227,
+      "question": "Differentiate: y = 5x^2 + 3x^2",
+      "answer": "10x^1 + 6x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^2) = 10x^1\nStep 3: d/dx(3x^2) = 6x^1\nAnswer: 10x^1 + 6x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 228,
+      "question": "Differentiate: y = 2x^2 + 2x^3",
+      "answer": "4x^1 + 6x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^2) = 4x^1\nStep 3: d/dx(2x^3) = 6x^2\nAnswer: 4x^1 + 6x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 229,
+      "question": "Differentiate: y = 1x^2 + 5x^4",
+      "answer": "2x^1 + 20x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^2) = 2x^1\nStep 3: d/dx(5x^4) = 20x^3\nAnswer: 2x^1 + 20x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 230,
+      "question": "Differentiate: y = 3x^2 + 1x^4",
+      "answer": "6x^1 + 4x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^2) = 6x^1\nStep 3: d/dx(1x^4) = 4x^3\nAnswer: 6x^1 + 4x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 231,
+      "question": "Differentiate: y = 2x^4 + 5x^4",
+      "answer": "8x^3 + 20x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^4) = 8x^3\nStep 3: d/dx(5x^4) = 20x^3\nAnswer: 8x^3 + 20x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 232,
+      "question": "Differentiate: y = 5x^6 + 4x^4",
+      "answer": "30x^5 + 16x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^6) = 30x^5\nStep 3: d/dx(4x^4) = 16x^3\nAnswer: 30x^5 + 16x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 233,
+      "question": "Differentiate: y = 3x^5 + 4x^5",
+      "answer": "15x^4 + 20x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^5) = 15x^4\nStep 3: d/dx(4x^5) = 20x^4\nAnswer: 15x^4 + 20x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 234,
+      "question": "Differentiate: y = 3x^2 + 4x^3",
+      "answer": "6x^1 + 12x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^2) = 6x^1\nStep 3: d/dx(4x^3) = 12x^2\nAnswer: 6x^1 + 12x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 235,
+      "question": "Differentiate: y = 1x^3 + 5x^3",
+      "answer": "3x^2 + 15x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^3) = 3x^2\nStep 3: d/dx(5x^3) = 15x^2\nAnswer: 3x^2 + 15x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 236,
+      "question": "Differentiate: y = 5x^3 + 2x^5",
+      "answer": "15x^2 + 10x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^3) = 15x^2\nStep 3: d/dx(2x^5) = 10x^4\nAnswer: 15x^2 + 10x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 237,
+      "question": "Differentiate: y = 5x^6 + 4x^3",
+      "answer": "30x^5 + 12x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^6) = 30x^5\nStep 3: d/dx(4x^3) = 12x^2\nAnswer: 30x^5 + 12x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 238,
+      "question": "Differentiate: y = 3x^2 + 4x^2",
+      "answer": "6x^1 + 8x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^2) = 6x^1\nStep 3: d/dx(4x^2) = 8x^1\nAnswer: 6x^1 + 8x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 239,
+      "question": "Differentiate: y = 5x^5 + 4x^4",
+      "answer": "25x^4 + 16x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^5) = 25x^4\nStep 3: d/dx(4x^4) = 16x^3\nAnswer: 25x^4 + 16x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 240,
+      "question": "Differentiate: y = 5x^5 + 1x^3",
+      "answer": "25x^4 + 3x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^5) = 25x^4\nStep 3: d/dx(1x^3) = 3x^2\nAnswer: 25x^4 + 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 241,
+      "question": "Differentiate: y = 3x^3 + 3x^2",
+      "answer": "9x^2 + 6x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^3) = 9x^2\nStep 3: d/dx(3x^2) = 6x^1\nAnswer: 9x^2 + 6x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 242,
+      "question": "Differentiate: y = 3x^3 + 4x^2",
+      "answer": "9x^2 + 8x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^3) = 9x^2\nStep 3: d/dx(4x^2) = 8x^1\nAnswer: 9x^2 + 8x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 243,
+      "question": "Differentiate: y = 3x^6 + 5x^2",
+      "answer": "18x^5 + 10x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^6) = 18x^5\nStep 3: d/dx(5x^2) = 10x^1\nAnswer: 18x^5 + 10x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 244,
+      "question": "Differentiate: y = 5x^6 + 1x^3",
+      "answer": "30x^5 + 3x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^6) = 30x^5\nStep 3: d/dx(1x^3) = 3x^2\nAnswer: 30x^5 + 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 245,
+      "question": "Differentiate: y = 1x^2 + 2x^2",
+      "answer": "2x^1 + 4x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^2) = 2x^1\nStep 3: d/dx(2x^2) = 4x^1\nAnswer: 2x^1 + 4x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 246,
+      "question": "Differentiate: y = 5x^5 + 1x^5",
+      "answer": "25x^4 + 5x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^5) = 25x^4\nStep 3: d/dx(1x^5) = 5x^4\nAnswer: 25x^4 + 5x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 247,
+      "question": "Differentiate: y = 5x^4 + 4x^5",
+      "answer": "20x^3 + 20x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^4) = 20x^3\nStep 3: d/dx(4x^5) = 20x^4\nAnswer: 20x^3 + 20x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 248,
+      "question": "Differentiate: y = 2x^6 + 3x^3",
+      "answer": "12x^5 + 9x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^6) = 12x^5\nStep 3: d/dx(3x^3) = 9x^2\nAnswer: 12x^5 + 9x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 249,
+      "question": "Differentiate: y = 1x^2 + 1x^2",
+      "answer": "2x^1 + 2x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^2) = 2x^1\nStep 3: d/dx(1x^2) = 2x^1\nAnswer: 2x^1 + 2x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 250,
+      "question": "Differentiate: y = 5x^6 + 3x^4",
+      "answer": "30x^5 + 12x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^6) = 30x^5\nStep 3: d/dx(3x^4) = 12x^3\nAnswer: 30x^5 + 12x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 251,
+      "question": "Differentiate: y = 2x^4 + 4x^4",
+      "answer": "8x^3 + 16x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^4) = 8x^3\nStep 3: d/dx(4x^4) = 16x^3\nAnswer: 8x^3 + 16x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 252,
+      "question": "Differentiate: y = 2x^4 + 5x^2",
+      "answer": "8x^3 + 10x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^4) = 8x^3\nStep 3: d/dx(5x^2) = 10x^1\nAnswer: 8x^3 + 10x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 253,
+      "question": "Differentiate: y = 3x^4 + 1x^3",
+      "answer": "12x^3 + 3x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^4) = 12x^3\nStep 3: d/dx(1x^3) = 3x^2\nAnswer: 12x^3 + 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 254,
+      "question": "Differentiate: y = 1x^3 + 2x^3",
+      "answer": "3x^2 + 6x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^3) = 3x^2\nStep 3: d/dx(2x^3) = 6x^2\nAnswer: 3x^2 + 6x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 255,
+      "question": "Differentiate: y = 3x^3 + 5x^4",
+      "answer": "9x^2 + 20x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^3) = 9x^2\nStep 3: d/dx(5x^4) = 20x^3\nAnswer: 9x^2 + 20x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 256,
+      "question": "Differentiate: y = 4x^2 + 3x^5",
+      "answer": "8x^1 + 15x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^2) = 8x^1\nStep 3: d/dx(3x^5) = 15x^4\nAnswer: 8x^1 + 15x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 257,
+      "question": "Differentiate: y = 5x^4 + 1x^3",
+      "answer": "20x^3 + 3x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^4) = 20x^3\nStep 3: d/dx(1x^3) = 3x^2\nAnswer: 20x^3 + 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 258,
+      "question": "Differentiate: y = 4x^6 + 4x^2",
+      "answer": "24x^5 + 8x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^6) = 24x^5\nStep 3: d/dx(4x^2) = 8x^1\nAnswer: 24x^5 + 8x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 259,
+      "question": "Differentiate: y = 4x^5 + 3x^3",
+      "answer": "20x^4 + 9x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^5) = 20x^4\nStep 3: d/dx(3x^3) = 9x^2\nAnswer: 20x^4 + 9x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 260,
+      "question": "Differentiate: y = 3x^6 + 2x^4",
+      "answer": "18x^5 + 8x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^6) = 18x^5\nStep 3: d/dx(2x^4) = 8x^3\nAnswer: 18x^5 + 8x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 261,
+      "question": "Differentiate: y = 1x^3 + 1x^3",
+      "answer": "3x^2 + 3x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^3) = 3x^2\nStep 3: d/dx(1x^3) = 3x^2\nAnswer: 3x^2 + 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 262,
+      "question": "Differentiate: y = 1x^5 + 4x^3",
+      "answer": "5x^4 + 12x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^5) = 5x^4\nStep 3: d/dx(4x^3) = 12x^2\nAnswer: 5x^4 + 12x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 263,
+      "question": "Differentiate: y = 5x^3 + 3x^5",
+      "answer": "15x^2 + 15x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^3) = 15x^2\nStep 3: d/dx(3x^5) = 15x^4\nAnswer: 15x^2 + 15x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 264,
+      "question": "Differentiate: y = 3x^5 + 2x^5",
+      "answer": "15x^4 + 10x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^5) = 15x^4\nStep 3: d/dx(2x^5) = 10x^4\nAnswer: 15x^4 + 10x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 265,
+      "question": "Differentiate: y = 2x^4 + 3x^3",
+      "answer": "8x^3 + 9x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^4) = 8x^3\nStep 3: d/dx(3x^3) = 9x^2\nAnswer: 8x^3 + 9x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 266,
+      "question": "Differentiate: y = 1x^2 + 3x^5",
+      "answer": "2x^1 + 15x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^2) = 2x^1\nStep 3: d/dx(3x^5) = 15x^4\nAnswer: 2x^1 + 15x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 267,
+      "question": "Differentiate: y = 5x^4 + 4x^4",
+      "answer": "20x^3 + 16x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^4) = 20x^3\nStep 3: d/dx(4x^4) = 16x^3\nAnswer: 20x^3 + 16x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 268,
+      "question": "Differentiate: y = 5x^6 + 5x^4",
+      "answer": "30x^5 + 20x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^6) = 30x^5\nStep 3: d/dx(5x^4) = 20x^3\nAnswer: 30x^5 + 20x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 269,
+      "question": "Differentiate: y = 1x^5 + 4x^2",
+      "answer": "5x^4 + 8x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^5) = 5x^4\nStep 3: d/dx(4x^2) = 8x^1\nAnswer: 5x^4 + 8x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 270,
+      "question": "Differentiate: y = 2x^2 + 5x^5",
+      "answer": "4x^1 + 25x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^2) = 4x^1\nStep 3: d/dx(5x^5) = 25x^4\nAnswer: 4x^1 + 25x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 271,
+      "question": "Differentiate: y = 4x^3 + 1x^4",
+      "answer": "12x^2 + 4x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^3) = 12x^2\nStep 3: d/dx(1x^4) = 4x^3\nAnswer: 12x^2 + 4x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 272,
+      "question": "Differentiate: y = 1x^3 + 3x^4",
+      "answer": "3x^2 + 12x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^3) = 3x^2\nStep 3: d/dx(3x^4) = 12x^3\nAnswer: 3x^2 + 12x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 273,
+      "question": "Differentiate: y = 1x^3 + 3x^2",
+      "answer": "3x^2 + 6x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^3) = 3x^2\nStep 3: d/dx(3x^2) = 6x^1\nAnswer: 3x^2 + 6x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 274,
+      "question": "Differentiate: y = 2x^4 + 1x^5",
+      "answer": "8x^3 + 5x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^4) = 8x^3\nStep 3: d/dx(1x^5) = 5x^4\nAnswer: 8x^3 + 5x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 275,
+      "question": "Differentiate: y = 3x^4 + 2x^3",
+      "answer": "12x^3 + 6x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^4) = 12x^3\nStep 3: d/dx(2x^3) = 6x^2\nAnswer: 12x^3 + 6x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 276,
+      "question": "Differentiate: y = 3x^5 + 2x^3",
+      "answer": "15x^4 + 6x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^5) = 15x^4\nStep 3: d/dx(2x^3) = 6x^2\nAnswer: 15x^4 + 6x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 277,
+      "question": "Differentiate: y = 5x^3 + 4x^2",
+      "answer": "15x^2 + 8x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^3) = 15x^2\nStep 3: d/dx(4x^2) = 8x^1\nAnswer: 15x^2 + 8x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 278,
+      "question": "Differentiate: y = 3x^3 + 5x^5",
+      "answer": "9x^2 + 25x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^3) = 9x^2\nStep 3: d/dx(5x^5) = 25x^4\nAnswer: 9x^2 + 25x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 279,
+      "question": "Differentiate: y = 4x^5 + 1x^4",
+      "answer": "20x^4 + 4x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^5) = 20x^4\nStep 3: d/dx(1x^4) = 4x^3\nAnswer: 20x^4 + 4x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 280,
+      "question": "Differentiate: y = 2x^5 + 5x^3",
+      "answer": "10x^4 + 15x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^5) = 10x^4\nStep 3: d/dx(5x^3) = 15x^2\nAnswer: 10x^4 + 15x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 281,
+      "question": "Differentiate: y = 4x^6 + 2x^5",
+      "answer": "24x^5 + 10x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^6) = 24x^5\nStep 3: d/dx(2x^5) = 10x^4\nAnswer: 24x^5 + 10x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 282,
+      "question": "Differentiate: y = 5x^3 + 3x^3",
+      "answer": "15x^2 + 9x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^3) = 15x^2\nStep 3: d/dx(3x^3) = 9x^2\nAnswer: 15x^2 + 9x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 283,
+      "question": "Differentiate: y = 3x^3 + 4x^4",
+      "answer": "9x^2 + 16x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^3) = 9x^2\nStep 3: d/dx(4x^4) = 16x^3\nAnswer: 9x^2 + 16x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 284,
+      "question": "Differentiate: y = 2x^6 + 2x^3",
+      "answer": "12x^5 + 6x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^6) = 12x^5\nStep 3: d/dx(2x^3) = 6x^2\nAnswer: 12x^5 + 6x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 285,
+      "question": "Differentiate: y = 1x^2 + 5x^5",
+      "answer": "2x^1 + 25x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^2) = 2x^1\nStep 3: d/dx(5x^5) = 25x^4\nAnswer: 2x^1 + 25x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 286,
+      "question": "Differentiate: y = 3x^3 + 1x^5",
+      "answer": "9x^2 + 5x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^3) = 9x^2\nStep 3: d/dx(1x^5) = 5x^4\nAnswer: 9x^2 + 5x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 287,
+      "question": "Differentiate: y = 5x^2 + 4x^2",
+      "answer": "10x^1 + 8x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^2) = 10x^1\nStep 3: d/dx(4x^2) = 8x^1\nAnswer: 10x^1 + 8x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 288,
+      "question": "Differentiate: y = 4x^6 + 4x^5",
+      "answer": "24x^5 + 20x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^6) = 24x^5\nStep 3: d/dx(4x^5) = 20x^4\nAnswer: 24x^5 + 20x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 289,
+      "question": "Differentiate: y = 1x^3 + 2x^4",
+      "answer": "3x^2 + 8x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^3) = 3x^2\nStep 3: d/dx(2x^4) = 8x^3\nAnswer: 3x^2 + 8x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 290,
+      "question": "Differentiate: y = 1x^4 + 3x^5",
+      "answer": "4x^3 + 15x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^4) = 4x^3\nStep 3: d/dx(3x^5) = 15x^4\nAnswer: 4x^3 + 15x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 291,
+      "question": "Differentiate: y = 5x^6 + 3x^3",
+      "answer": "30x^5 + 9x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^6) = 30x^5\nStep 3: d/dx(3x^3) = 9x^2\nAnswer: 30x^5 + 9x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 292,
+      "question": "Differentiate: y = 5x^6 + 3x^2",
+      "answer": "30x^5 + 6x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^6) = 30x^5\nStep 3: d/dx(3x^2) = 6x^1\nAnswer: 30x^5 + 6x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 293,
+      "question": "Differentiate: y = 3x^3 + 1x^3",
+      "answer": "9x^2 + 3x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^3) = 9x^2\nStep 3: d/dx(1x^3) = 3x^2\nAnswer: 9x^2 + 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 294,
+      "question": "Differentiate: y = 1x^2 + 5x^2",
+      "answer": "2x^1 + 10x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^2) = 2x^1\nStep 3: d/dx(5x^2) = 10x^1\nAnswer: 2x^1 + 10x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 295,
+      "question": "Differentiate: y = 5x^2 + 5x^4",
+      "answer": "10x^1 + 20x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^2) = 10x^1\nStep 3: d/dx(5x^4) = 20x^3\nAnswer: 10x^1 + 20x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 296,
+      "question": "Differentiate: y = 5x^2 + 1x^5",
+      "answer": "10x^1 + 5x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^2) = 10x^1\nStep 3: d/dx(1x^5) = 5x^4\nAnswer: 10x^1 + 5x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 297,
+      "question": "Differentiate: y = 4x^6 + 5x^5",
+      "answer": "24x^5 + 25x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^6) = 24x^5\nStep 3: d/dx(5x^5) = 25x^4\nAnswer: 24x^5 + 25x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 298,
+      "question": "Differentiate: y = 5x^5 + 2x^3",
+      "answer": "25x^4 + 6x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^5) = 25x^4\nStep 3: d/dx(2x^3) = 6x^2\nAnswer: 25x^4 + 6x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 299,
+      "question": "Differentiate: y = 4x^6 + 2x^3",
+      "answer": "24x^5 + 6x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^6) = 24x^5\nStep 3: d/dx(2x^3) = 6x^2\nAnswer: 24x^5 + 6x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 300,
+      "question": "Differentiate: y = 4x^3 + 2x^2",
+      "answer": "12x^2 + 4x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^3) = 12x^2\nStep 3: d/dx(2x^2) = 4x^1\nAnswer: 12x^2 + 4x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 301,
+      "question": "Differentiate: y = 3x^2 + 2x^3",
+      "answer": "6x^1 + 6x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^2) = 6x^1\nStep 3: d/dx(2x^3) = 6x^2\nAnswer: 6x^1 + 6x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 302,
+      "question": "Differentiate: y = 1x^4 + 3x^4",
+      "answer": "4x^3 + 12x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^4) = 4x^3\nStep 3: d/dx(3x^4) = 12x^3\nAnswer: 4x^3 + 12x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 303,
+      "question": "Differentiate: y = 3x^3 + 4x^5",
+      "answer": "9x^2 + 20x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^3) = 9x^2\nStep 3: d/dx(4x^5) = 20x^4\nAnswer: 9x^2 + 20x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 304,
+      "question": "Differentiate: y = 1x^4 + 1x^3",
+      "answer": "4x^3 + 3x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^4) = 4x^3\nStep 3: d/dx(1x^3) = 3x^2\nAnswer: 4x^3 + 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 305,
+      "question": "Differentiate: y = 1x^3 + 1x^5",
+      "answer": "3x^2 + 5x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^3) = 3x^2\nStep 3: d/dx(1x^5) = 5x^4\nAnswer: 3x^2 + 5x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 306,
+      "question": "Differentiate: y = 3x^3 + 3x^4",
+      "answer": "9x^2 + 12x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^3) = 9x^2\nStep 3: d/dx(3x^4) = 12x^3\nAnswer: 9x^2 + 12x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 307,
+      "question": "Differentiate: y = 1x^5 + 2x^2",
+      "answer": "5x^4 + 4x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^5) = 5x^4\nStep 3: d/dx(2x^2) = 4x^1\nAnswer: 5x^4 + 4x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 308,
+      "question": "Differentiate: y = 1x^6 + 1x^2",
+      "answer": "6x^5 + 2x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^6) = 6x^5\nStep 3: d/dx(1x^2) = 2x^1\nAnswer: 6x^5 + 2x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 309,
+      "question": "Differentiate: y = 2x^3 + 5x^4",
+      "answer": "6x^2 + 20x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^3) = 6x^2\nStep 3: d/dx(5x^4) = 20x^3\nAnswer: 6x^2 + 20x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 310,
+      "question": "Differentiate: y = 1x^3 + 3x^5",
+      "answer": "3x^2 + 15x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^3) = 3x^2\nStep 3: d/dx(3x^5) = 15x^4\nAnswer: 3x^2 + 15x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 311,
+      "question": "Differentiate: y = 1x^4 + 2x^2",
+      "answer": "4x^3 + 4x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^4) = 4x^3\nStep 3: d/dx(2x^2) = 4x^1\nAnswer: 4x^3 + 4x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 312,
+      "question": "Differentiate: y = 2x^3 + 2x^4",
+      "answer": "6x^2 + 8x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^3) = 6x^2\nStep 3: d/dx(2x^4) = 8x^3\nAnswer: 6x^2 + 8x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 313,
+      "question": "Differentiate: y = 5x^3 + 3x^4",
+      "answer": "15x^2 + 12x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^3) = 15x^2\nStep 3: d/dx(3x^4) = 12x^3\nAnswer: 15x^2 + 12x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 314,
+      "question": "Differentiate: y = 3x^6 + 2x^2",
+      "answer": "18x^5 + 4x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^6) = 18x^5\nStep 3: d/dx(2x^2) = 4x^1\nAnswer: 18x^5 + 4x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 315,
+      "question": "Differentiate: y = 4x^4 + 3x^4",
+      "answer": "16x^3 + 12x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^4) = 16x^3\nStep 3: d/dx(3x^4) = 12x^3\nAnswer: 16x^3 + 12x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 316,
+      "question": "Differentiate: y = 1x^3 + 5x^4",
+      "answer": "3x^2 + 20x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^3) = 3x^2\nStep 3: d/dx(5x^4) = 20x^3\nAnswer: 3x^2 + 20x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 317,
+      "question": "Differentiate: y = 3x^6 + 1x^5",
+      "answer": "18x^5 + 5x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^6) = 18x^5\nStep 3: d/dx(1x^5) = 5x^4\nAnswer: 18x^5 + 5x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 318,
+      "question": "Differentiate: y = 3x^6 + 2x^5",
+      "answer": "18x^5 + 10x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^6) = 18x^5\nStep 3: d/dx(2x^5) = 10x^4\nAnswer: 18x^5 + 10x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 319,
+      "question": "Differentiate: y = 5x^4 + 3x^2",
+      "answer": "20x^3 + 6x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^4) = 20x^3\nStep 3: d/dx(3x^2) = 6x^1\nAnswer: 20x^3 + 6x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 320,
+      "question": "Differentiate: y = 1x^4 + 2x^5",
+      "answer": "4x^3 + 10x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^4) = 4x^3\nStep 3: d/dx(2x^5) = 10x^4\nAnswer: 4x^3 + 10x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 321,
+      "question": "Differentiate: y = 4x^5 + 3x^2",
+      "answer": "20x^4 + 6x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^5) = 20x^4\nStep 3: d/dx(3x^2) = 6x^1\nAnswer: 20x^4 + 6x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 322,
+      "question": "Differentiate: y = 4x^4 + 1x^3",
+      "answer": "16x^3 + 3x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^4) = 16x^3\nStep 3: d/dx(1x^3) = 3x^2\nAnswer: 16x^3 + 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 323,
+      "question": "Differentiate: y = 1x^5 + 3x^4",
+      "answer": "5x^4 + 12x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^5) = 5x^4\nStep 3: d/dx(3x^4) = 12x^3\nAnswer: 5x^4 + 12x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 324,
+      "question": "Differentiate: y = 1x^3 + 2x^5",
+      "answer": "3x^2 + 10x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^3) = 3x^2\nStep 3: d/dx(2x^5) = 10x^4\nAnswer: 3x^2 + 10x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 325,
+      "question": "Differentiate: y = 2x^2 + 3x^5",
+      "answer": "4x^1 + 15x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^2) = 4x^1\nStep 3: d/dx(3x^5) = 15x^4\nAnswer: 4x^1 + 15x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 326,
+      "question": "Differentiate: y = 3x^5 + 5x^4",
+      "answer": "15x^4 + 20x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^5) = 15x^4\nStep 3: d/dx(5x^4) = 20x^3\nAnswer: 15x^4 + 20x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 327,
+      "question": "Differentiate: y = 5x^2 + 3x^5",
+      "answer": "10x^1 + 15x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^2) = 10x^1\nStep 3: d/dx(3x^5) = 15x^4\nAnswer: 10x^1 + 15x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 328,
+      "question": "Differentiate: y = 1x^6 + 1x^4",
+      "answer": "6x^5 + 4x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^6) = 6x^5\nStep 3: d/dx(1x^4) = 4x^3\nAnswer: 6x^5 + 4x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 329,
+      "question": "Differentiate: y = 1x^4 + 1x^5",
+      "answer": "4x^3 + 5x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^4) = 4x^3\nStep 3: d/dx(1x^5) = 5x^4\nAnswer: 4x^3 + 5x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 330,
+      "question": "Differentiate: y = 4x^6 + 4x^3",
+      "answer": "24x^5 + 12x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^6) = 24x^5\nStep 3: d/dx(4x^3) = 12x^2\nAnswer: 24x^5 + 12x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 331,
+      "question": "Differentiate: y = 5x^5 + 2x^2",
+      "answer": "25x^4 + 4x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^5) = 25x^4\nStep 3: d/dx(2x^2) = 4x^1\nAnswer: 25x^4 + 4x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 332,
+      "question": "Differentiate: y = 2x^3 + 1x^5",
+      "answer": "6x^2 + 5x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^3) = 6x^2\nStep 3: d/dx(1x^5) = 5x^4\nAnswer: 6x^2 + 5x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 333,
+      "question": "Differentiate: y = 1x^6 + 4x^5",
+      "answer": "6x^5 + 20x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^6) = 6x^5\nStep 3: d/dx(4x^5) = 20x^4\nAnswer: 6x^5 + 20x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 334,
+      "question": "Differentiate: y = 3x^5 + 2x^4",
+      "answer": "15x^4 + 8x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^5) = 15x^4\nStep 3: d/dx(2x^4) = 8x^3\nAnswer: 15x^4 + 8x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 335,
+      "question": "Differentiate: y = 3x^4 + 4x^3",
+      "answer": "12x^3 + 12x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^4) = 12x^3\nStep 3: d/dx(4x^3) = 12x^2\nAnswer: 12x^3 + 12x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 336,
+      "question": "Differentiate: y = 1x^2 + 1x^4",
+      "answer": "2x^1 + 4x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^2) = 2x^1\nStep 3: d/dx(1x^4) = 4x^3\nAnswer: 2x^1 + 4x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 337,
+      "question": "Differentiate: y = 2x^4 + 3x^5",
+      "answer": "8x^3 + 15x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^4) = 8x^3\nStep 3: d/dx(3x^5) = 15x^4\nAnswer: 8x^3 + 15x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 338,
+      "question": "Differentiate: y = 1x^3 + 3x^3",
+      "answer": "3x^2 + 9x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^3) = 3x^2\nStep 3: d/dx(3x^3) = 9x^2\nAnswer: 3x^2 + 9x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 339,
+      "question": "Differentiate: y = 3x^4 + 4x^5",
+      "answer": "12x^3 + 20x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^4) = 12x^3\nStep 3: d/dx(4x^5) = 20x^4\nAnswer: 12x^3 + 20x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 340,
+      "question": "Differentiate: y = 1x^6 + 3x^3",
+      "answer": "6x^5 + 9x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^6) = 6x^5\nStep 3: d/dx(3x^3) = 9x^2\nAnswer: 6x^5 + 9x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 341,
+      "question": "Differentiate: y = 2x^6 + 2x^5",
+      "answer": "12x^5 + 10x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^6) = 12x^5\nStep 3: d/dx(2x^5) = 10x^4\nAnswer: 12x^5 + 10x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 342,
+      "question": "Differentiate: y = 3x^6 + 5x^4",
+      "answer": "18x^5 + 20x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^6) = 18x^5\nStep 3: d/dx(5x^4) = 20x^3\nAnswer: 18x^5 + 20x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 343,
+      "question": "Differentiate: y = 5x^5 + 5x^2",
+      "answer": "25x^4 + 10x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^5) = 25x^4\nStep 3: d/dx(5x^2) = 10x^1\nAnswer: 25x^4 + 10x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 344,
+      "question": "Differentiate: y = 1x^4 + 1x^2",
+      "answer": "4x^3 + 2x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^4) = 4x^3\nStep 3: d/dx(1x^2) = 2x^1\nAnswer: 4x^3 + 2x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 345,
+      "question": "Differentiate: y = 1x^4 + 5x^5",
+      "answer": "4x^3 + 25x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^4) = 4x^3\nStep 3: d/dx(5x^5) = 25x^4\nAnswer: 4x^3 + 25x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 346,
+      "question": "Differentiate: y = 4x^4 + 1x^2",
+      "answer": "16x^3 + 2x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^4) = 16x^3\nStep 3: d/dx(1x^2) = 2x^1\nAnswer: 16x^3 + 2x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 347,
+      "question": "Differentiate: y = 4x^5 + 3x^4",
+      "answer": "20x^4 + 12x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^5) = 20x^4\nStep 3: d/dx(3x^4) = 12x^3\nAnswer: 20x^4 + 12x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 348,
+      "question": "Differentiate: y = 2x^3 + 4x^2",
+      "answer": "6x^2 + 8x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^3) = 6x^2\nStep 3: d/dx(4x^2) = 8x^1\nAnswer: 6x^2 + 8x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 349,
+      "question": "Differentiate: y = 3x^3 + 2x^4",
+      "answer": "9x^2 + 8x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^3) = 9x^2\nStep 3: d/dx(2x^4) = 8x^3\nAnswer: 9x^2 + 8x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 350,
+      "question": "Differentiate: y = 2x^5 + 4x^5",
+      "answer": "10x^4 + 20x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^5) = 10x^4\nStep 3: d/dx(4x^5) = 20x^4\nAnswer: 10x^4 + 20x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 351,
+      "question": "Differentiate: y = 5x^3 + 4x^3",
+      "answer": "15x^2 + 12x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^3) = 15x^2\nStep 3: d/dx(4x^3) = 12x^2\nAnswer: 15x^2 + 12x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 352,
+      "question": "Differentiate: y = 5x^5 + 5x^3",
+      "answer": "25x^4 + 15x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^5) = 25x^4\nStep 3: d/dx(5x^3) = 15x^2\nAnswer: 25x^4 + 15x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 353,
+      "question": "Differentiate: y = 1x^6 + 5x^2",
+      "answer": "6x^5 + 10x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^6) = 6x^5\nStep 3: d/dx(5x^2) = 10x^1\nAnswer: 6x^5 + 10x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 354,
+      "question": "Differentiate: y = 4x^6 + 2x^2",
+      "answer": "24x^5 + 4x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^6) = 24x^5\nStep 3: d/dx(2x^2) = 4x^1\nAnswer: 24x^5 + 4x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 355,
+      "question": "Differentiate: y = 4x^2 + 3x^3",
+      "answer": "8x^1 + 9x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^2) = 8x^1\nStep 3: d/dx(3x^3) = 9x^2\nAnswer: 8x^1 + 9x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 356,
+      "question": "Differentiate: y = 3x^5 + 5x^3",
+      "answer": "15x^4 + 15x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^5) = 15x^4\nStep 3: d/dx(5x^3) = 15x^2\nAnswer: 15x^4 + 15x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 357,
+      "question": "Differentiate: y = 5x^3 + 1x^3",
+      "answer": "15x^2 + 3x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^3) = 15x^2\nStep 3: d/dx(1x^3) = 3x^2\nAnswer: 15x^2 + 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 358,
+      "question": "Differentiate: y = 4x^5 + 2x^5",
+      "answer": "20x^4 + 10x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^5) = 20x^4\nStep 3: d/dx(2x^5) = 10x^4\nAnswer: 20x^4 + 10x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 359,
+      "question": "Differentiate: y = 2x^2 + 1x^3",
+      "answer": "4x^1 + 3x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^2) = 4x^1\nStep 3: d/dx(1x^3) = 3x^2\nAnswer: 4x^1 + 3x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 360,
+      "question": "Differentiate: y = 1x^6 + 2x^5",
+      "answer": "6x^5 + 10x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^6) = 6x^5\nStep 3: d/dx(2x^5) = 10x^4\nAnswer: 6x^5 + 10x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 361,
+      "question": "Differentiate: y = 4x^3 + 3x^5",
+      "answer": "12x^2 + 15x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^3) = 12x^2\nStep 3: d/dx(3x^5) = 15x^4\nAnswer: 12x^2 + 15x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 362,
+      "question": "Differentiate: y = 5x^5 + 4x^3",
+      "answer": "25x^4 + 12x^2",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^5) = 25x^4\nStep 3: d/dx(4x^3) = 12x^2\nAnswer: 25x^4 + 12x^2",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 363,
+      "question": "Differentiate: y = 3x^2 + 3x^4",
+      "answer": "6x^1 + 12x^3",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(3x^2) = 6x^1\nStep 3: d/dx(3x^4) = 12x^3\nAnswer: 6x^1 + 12x^3",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 364,
+      "question": "Differentiate: y = 2x^5 + 5x^5",
+      "answer": "10x^4 + 25x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^5) = 10x^4\nStep 3: d/dx(5x^5) = 25x^4\nAnswer: 10x^4 + 25x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 365,
+      "question": "Differentiate: y = 4x^6 + 1x^2",
+      "answer": "24x^5 + 2x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^6) = 24x^5\nStep 3: d/dx(1x^2) = 2x^1\nAnswer: 24x^5 + 2x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 366,
+      "question": "Differentiate: y = 4x^2 + 1x^5",
+      "answer": "8x^1 + 5x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^2) = 8x^1\nStep 3: d/dx(1x^5) = 5x^4\nAnswer: 8x^1 + 5x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 367,
+      "question": "Differentiate: y = 2x^5 + 4x^2",
+      "answer": "10x^4 + 8x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(2x^5) = 10x^4\nStep 3: d/dx(4x^2) = 8x^1\nAnswer: 10x^4 + 8x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 368,
+      "question": "Differentiate: y = 4x^3 + 2x^5",
+      "answer": "12x^2 + 10x^4",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(4x^3) = 12x^2\nStep 3: d/dx(2x^5) = 10x^4\nAnswer: 12x^2 + 10x^4",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 369,
+      "question": "Differentiate: y = 1x^5 + 5x^2",
+      "answer": "5x^4 + 10x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(1x^5) = 5x^4\nStep 3: d/dx(5x^2) = 10x^1\nAnswer: 5x^4 + 10x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 370,
+      "question": "Differentiate: y = 5x^2 + 5x^2",
+      "answer": "10x^1 + 10x^1",
+      "solution": "Step 1: Apply power rule to each term\nStep 2: d/dx(5x^2) = 10x^1\nStep 3: d/dx(5x^2) = 10x^1\nAnswer: 10x^1 + 10x^1",
+      "source": "JEE/GUJCET Pattern with Solution"
+    }
+  ],
+  "total_questions": 370,
+  "source": "Web Scraped + JEE/GUJCET Patterns"
+}

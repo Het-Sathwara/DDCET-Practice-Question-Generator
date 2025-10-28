@@ -1,0 +1,154 @@
+{
+  "chapter": "Integration",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Integrate by parts: ∫ x × e^x dx",
+      "answer": "x·e^x - e^x + C = e^x(x-1) + C",
+      "solution": "Step 1: Use ∫u dv = uv - ∫v du\nStep 2: u = x, dv = e^x dx\nStep 3: du = dx, v = e^x\nStep 4: ∫x·e^x dx = x·e^x - ∫e^x dx\nAnswer: x·e^x - e^x + C = e^x(x-1) + C",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 2,
+      "question": "Find: ∫ sin(5x) dx",
+      "answer": "-cos(5x)/5 + C",
+      "solution": "Step 1: ∫sin(kx) dx = -cos(kx)/k + C\nStep 2: ∫sin(5x) dx = -cos(5x)/5 + C\nAnswer: -cos(5x)/5 + C",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 3,
+      "question": "Evaluate: ∫ x^2 dx",
+      "answer": "x^3/3 + C",
+      "solution": "Step 1: Use power rule ∫x^n dx = x^(n+1)/(n+1) + C\nStep 2: ∫x^2 dx = x^3/3 + C\nAnswer: x^3/3 + C",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 4,
+      "question": "Calculate: ∫ e^(2x) dx",
+      "answer": "e^(2x)/2 + C",
+      "solution": "Step 1: ∫e^(kx) dx = e^(kx)/k + C\nStep 2: ∫e^(2x) dx = e^(2x)/2 + C\nAnswer: e^(2x)/2 + C",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 5,
+      "question": "Evaluate: ∫₀^3 x² dx",
+      "answer": "9.0",
+      "solution": "Step 1: Find antiderivative: x³/3\nStep 2: Apply limits: [x³/3]₀^3\nStep 3: (3³/3) - (0³/3) = 9.0\nAnswer: 9.0",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 6,
+      "question": "Evaluate: ∫ x^3 dx",
+      "answer": "x^4/4 + C",
+      "solution": "Step 1: Use power rule ∫x^n dx = x^(n+1)/(n+1) + C\nStep 2: ∫x^3 dx = x^4/4 + C\nAnswer: x^4/4 + C",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 7,
+      "question": "Evaluate: ∫₀^2 x² dx",
+      "answer": "2.6666666666666665",
+      "solution": "Step 1: Find antiderivative: x³/3\nStep 2: Apply limits: [x³/3]₀^2\nStep 3: (2³/3) - (0³/3) = 2.6666666666666665\nAnswer: 2.6666666666666665",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 8,
+      "question": "Evaluate: ∫ x^5 dx",
+      "answer": "x^6/6 + C",
+      "solution": "Step 1: Use power rule ∫x^n dx = x^(n+1)/(n+1) + C\nStep 2: ∫x^5 dx = x^6/6 + C\nAnswer: x^6/6 + C",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 9,
+      "question": "Evaluate: ∫ x^4 dx",
+      "answer": "x^5/5 + C",
+      "solution": "Step 1: Use power rule ∫x^n dx = x^(n+1)/(n+1) + C\nStep 2: ∫x^4 dx = x^5/5 + C\nAnswer: x^5/5 + C",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 10,
+      "question": "Calculate: ∫ e^(5x) dx",
+      "answer": "e^(5x)/5 + C",
+      "solution": "Step 1: ∫e^(kx) dx = e^(kx)/k + C\nStep 2: ∫e^(5x) dx = e^(5x)/5 + C\nAnswer: e^(5x)/5 + C",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 11,
+      "question": "Evaluate: ∫ x^6 dx",
+      "answer": "x^7/7 + C",
+      "solution": "Step 1: Use power rule ∫x^n dx = x^(n+1)/(n+1) + C\nStep 2: ∫x^6 dx = x^7/7 + C\nAnswer: x^7/7 + C",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 12,
+      "question": "Find: ∫ sin(6x) dx",
+      "answer": "-cos(6x)/6 + C",
+      "solution": "Step 1: ∫sin(kx) dx = -cos(kx)/k + C\nStep 2: ∫sin(6x) dx = -cos(6x)/6 + C\nAnswer: -cos(6x)/6 + C",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 13,
+      "question": "Find: ∫ sin(3x) dx",
+      "answer": "-cos(3x)/3 + C",
+      "solution": "Step 1: ∫sin(kx) dx = -cos(kx)/k + C\nStep 2: ∫sin(3x) dx = -cos(3x)/3 + C\nAnswer: -cos(3x)/3 + C",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 14,
+      "question": "Evaluate: ∫₀^4 x² dx",
+      "answer": "21.333333333333332",
+      "solution": "Step 1: Find antiderivative: x³/3\nStep 2: Apply limits: [x³/3]₀^4\nStep 3: (4³/3) - (0³/3) = 21.333333333333332\nAnswer: 21.333333333333332",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 15,
+      "question": "Find: ∫ sin(2x) dx",
+      "answer": "-cos(2x)/2 + C",
+      "solution": "Step 1: ∫sin(kx) dx = -cos(kx)/k + C\nStep 2: ∫sin(2x) dx = -cos(2x)/2 + C\nAnswer: -cos(2x)/2 + C",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 16,
+      "question": "Find: ∫ sin(4x) dx",
+      "answer": "-cos(4x)/4 + C",
+      "solution": "Step 1: ∫sin(kx) dx = -cos(kx)/k + C\nStep 2: ∫sin(4x) dx = -cos(4x)/4 + C\nAnswer: -cos(4x)/4 + C",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 17,
+      "question": "Evaluate: ∫₀^1 x² dx",
+      "answer": "0.3333333333333333",
+      "solution": "Step 1: Find antiderivative: x³/3\nStep 2: Apply limits: [x³/3]₀^1\nStep 3: (1³/3) - (0³/3) = 0.3333333333333333\nAnswer: 0.3333333333333333",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 18,
+      "question": "Calculate: ∫ e^(4x) dx",
+      "answer": "e^(4x)/4 + C",
+      "solution": "Step 1: ∫e^(kx) dx = e^(kx)/k + C\nStep 2: ∫e^(4x) dx = e^(4x)/4 + C\nAnswer: e^(4x)/4 + C",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 19,
+      "question": "Evaluate: ∫₀^5 x² dx",
+      "answer": "41.666666666666664",
+      "solution": "Step 1: Find antiderivative: x³/3\nStep 2: Apply limits: [x³/3]₀^5\nStep 3: (5³/3) - (0³/3) = 41.666666666666664\nAnswer: 41.666666666666664",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 20,
+      "question": "Calculate: ∫ e^(6x) dx",
+      "answer": "e^(6x)/6 + C",
+      "solution": "Step 1: ∫e^(kx) dx = e^(kx)/k + C\nStep 2: ∫e^(6x) dx = e^(6x)/6 + C\nAnswer: e^(6x)/6 + C",
+      "source": "JEE/GUJCET Pattern with Solution"
+    },
+    {
+      "id": 21,
+      "question": "Calculate: ∫ e^(3x) dx",
+      "answer": "e^(3x)/3 + C",
+      "solution": "Step 1: ∫e^(kx) dx = e^(kx)/k + C\nStep 2: ∫e^(3x) dx = e^(3x)/3 + C\nAnswer: e^(3x)/3 + C",
+      "source": "JEE/GUJCET Pattern with Solution"
+    }
+  ],
+  "total_questions": 21,
+  "source": "Web Scraped + JEE/GUJCET Patterns"
+}
