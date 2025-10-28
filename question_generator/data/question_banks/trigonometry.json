@@ -1,0 +1,14 @@
+{
+  "chapter": "Trigonometry",
+  "questions": [
+    {
+      "id": 1,
+      "question": "If sin θ + cos θ = √2, find the value of sin θ cos θ",
+      "answer": "1/2",
+      "solution": "Square both sides: sin²θ + cos²θ + 2sinθcosθ = 2\n1 + 2sinθcosθ = 2\nsinθcosθ = 1/2",
+      "source": "Example - Add your own questions below"
+    }
+  ],
+  "instructions": "ADD YOUR QUESTIONS HERE - Just copy-paste from PDFs/books in this format"
+}
+
