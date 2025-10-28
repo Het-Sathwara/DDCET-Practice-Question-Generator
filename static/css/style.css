@@ -1,4 +1,4 @@
-/* Minimal Professional Style - Black/Grey/White/Beige */
+/* Clean Cream Theme - Light & Modern */
 
 * {
     margin: 0;
@@ -7,10 +7,10 @@
 }
 
 body {
-    font-family: 'Courier New', 'Consolas', monospace;
-    background: #000000;
-    color: #e8e8e8;
-    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #FAF3E0;
+    color: #2C3E50;
+    padding: 20px;
     line-height: 1.6;
 }
 
@@ -21,61 +21,69 @@ body {
 
 /* Header */
 header {
-    border: 1px solid #555;
-    padding: 15px;
-    margin-bottom: 20px;
-    background: #0a0a0a;
+    border: 2px solid #D4A373;
+    padding: 20px;
+    margin-bottom: 25px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 header h1 {
-    font-size: 1.5rem;
-    color: #f5f5dc;
+    font-size: 1.8rem;
+    color: #8B4513;
+    margin-bottom: 8px;
 }
 
 header .subtitle {
-    color: #999;
-    font-size: 0.9rem;
+    color: #6B705C;
+    font-size: 1rem;
 }
 
 .stats {
-    margin-top: 10px;
-    color: #888;
-    font-size: 0.85rem;
+    margin-top: 12px;
+    color: #6B705C;
+    font-size: 0.9rem;
 }
 
 .stats span {
-    color: #f5f5dc;
+    color: #8B4513;
     font-weight: bold;
 }
 
 /* Forms */
 form {
-    border: 1px solid #555;
-    padding: 15px;
-    margin-bottom: 20px;
-    background: #0a0a0a;
+    border: 2px solid #D4A373;
+    padding: 20px;
+    margin-bottom: 25px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 label {
     display: block;
-    margin-top: 10px;
-    color: #999;
-    font-size: 0.85rem;
+    margin-top: 12px;
+    color: #2C3E50;
+    font-size: 0.95rem;
+    font-weight: 600;
 }
 
 input, select {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    background: #1a1a1a;
-    border: 1px solid #444;
-    color: #e8e8e8;
-    font-family: 'Courier New', monospace;
+    padding: 10px;
+    margin-top: 6px;
+    background: #FFF8E7;
+    border: 2px solid #D4A373;
+    color: #2C3E50;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    border-radius: 4px;
 }
 
 input:focus, select:focus {
     outline: none;
-    border-color: #f5f5dc;
+    border-color: #8B4513;
+    background: #FFFFFF;
 }
 
 input:disabled, select:disabled {
@@ -84,91 +92,110 @@ input:disabled, select:disabled {
 }
 
 button {
-    padding: 10px 20px;
-    margin: 10px 5px 0 0;
-    background: #1a1a1a;
-    border: 1px solid #666;
-    color: #e8e8e8;
-    font-family: 'Courier New', monospace;
+    padding: 12px 24px;
+    margin: 10px 8px 0 0;
+    background: #8B4513;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
     cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s;
 }
 
 button:hover {
-    background: #f5f5dc;
-    color: #000;
-    border-color: #f5f5dc;
+    background: #A0522D;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.3);
 }
 
 button.danger {
-    border-color: #666;
-    color: #999;
+    background: #B85C38;
 }
 
 button.danger:hover {
-    background: #666;
-    color: #fff;
+    background: #CD6839;
 }
 
 /* Loading */
 #loading {
-    border: 1px solid #555;
-    padding: 20px;
+    border: 2px solid #D4A373;
+    padding: 25px;
     text-align: center;
-    margin: 20px 0;
-    color: #f5f5dc;
-    background: #0a0a0a;
+    margin: 25px 0;
+    color: #8B4513;
+    background: #FFFFFF;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 /* Results */
 #results, #statistics {
-    border: 1px solid #555;
-    padding: 15px;
-    margin: 20px 0;
-    background: #0a0a0a;
+    border: 2px solid #D4A373;
+    padding: 20px;
+    margin: 25px 0;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 h2 {
-    color: #f5f5dc;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+    color: #8B4513;
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #D4A373;
+    padding-bottom: 8px;
 }
 
 .question-item {
-    border-left: 3px solid #666;
-    padding: 15px;
-    margin: 15px 0;
-    background: #1a1a1a;
+    border-left: 4px solid #D4A373;
+    padding: 18px;
+    margin: 18px 0;
+    background: #FFF8E7;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.question-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateX(5px);
 }
 
 .question-item h3 {
-    color: #f5f5dc;
-    font-size: 0.95rem;
-    margin-bottom: 8px;
+    color: #8B4513;
+    font-size: 1.05rem;
+    margin-bottom: 10px;
 }
 
 .question-meta {
-    color: #888;
-    font-size: 0.8rem;
-    margin-bottom: 10px;
+    color: #6B705C;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
 }
 
 .meta-badge {
     display: inline-block;
     margin-right: 10px;
-    padding: 2px 8px;
-    background: #2a2a2a;
-    border: 1px solid #444;
-    color: #ccc;
+    padding: 4px 10px;
+    background: #D4A373;
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    font-weight: 600;
 }
 
 .question-text {
-    margin: 10px 0;
+    margin: 12px 0;
     white-space: pre-wrap;
-    font-family: 'Courier New', monospace;
-    background: #0a0a0a;
-    padding: 10px;
-    border: 1px solid #333;
-    color: #e8e8e8;
+    font-family: 'Georgia', serif;
+    background: #FFFFFF;
+    padding: 15px;
+    border: 2px solid #D4A373;
+    color: #2C3E50;
+    border-radius: 4px;
+    line-height: 1.8;
 }
 
 .question-options {
@@ -182,23 +209,27 @@ h2 {
 }
 
 .answer-box {
-    background: #0f0f0f;
-    border: 1px solid #666;
-    padding: 10px;
-    margin: 10px 0;
-    color: #f5f5dc;
+    background: #E8F4EA;
+    border: 2px solid #90C695;
+    padding: 12px;
+    margin: 12px 0;
+    color: #2C5F2D;
     white-space: pre-wrap;
-    font-family: 'Courier New', monospace;
+    font-family: 'Georgia', serif;
+    border-radius: 4px;
+    font-weight: 600;
 }
 
 .solution-box {
-    background: #1a1a1a;
-    border: 1px solid #555;
-    padding: 10px;
-    margin: 10px 0;
-    color: #ccc;
+    background: #FFF8E7;
+    border: 2px solid #D4A373;
+    padding: 15px;
+    margin: 12px 0;
+    color: #2C3E50;
     white-space: pre-wrap;
-    font-family: 'Courier New', monospace;
+    font-family: 'Georgia', serif;
+    border-radius: 4px;
+    line-height: 1.8;
 }
 
 /* Statistics */
