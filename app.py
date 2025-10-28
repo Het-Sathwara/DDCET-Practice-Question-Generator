@@ -132,6 +132,11 @@ def generate_questions():
     topic = data.get('topic')
     count = int(data.get('count', 10))
     
+    # Debug logging
+    print(f"DEBUG: Received topic: {topic}, count: {count}")
+    print(f"DEBUG: PHYSICS_GENERATORS keys: {list(PHYSICS_GENERATORS.keys())}")
+    print(f"DEBUG: Is physics topic: {topic in PHYSICS_GENERATORS}")
+    
     # Validate count
     if count < 1 or count > 100:
         return jsonify({'error': 'Count must be between 1 and 100'}), 400
