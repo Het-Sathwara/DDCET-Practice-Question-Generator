@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated Questions (optional - remove this line if you want to commit generated questions)
+generated_questions/
+
+# Test files
+test_*.py
+*_test.py
+
+# Temporary files
+*.tmp
+*.log
+
+# PDFs and images (formula sources)
+formula.pdf
+*.png
+*.jpg
+*.jpeg
