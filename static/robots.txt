@@ -1,14 +1,28 @@
+# DDCET Question Generator - Robots.txt
+# All crawlers are explicitly allowed
+
 User-agent: *
 Allow: /
+Disallow:
+
+# Sitemap location
 Sitemap: https://ddcet.onrender.com/sitemap.xml
 
-# Allow all search engines
+# Specific search engines - explicitly allowed
 User-agent: Googlebot
+Allow: /
+Disallow:
+
+User-agent: Googlebot-Image
 Allow: /
 
 User-agent: Bingbot
 Allow: /
+Disallow:
 
 User-agent: Slurp
 Allow: /
+Disallow:
+
+# Crawl-delay is not set to allow fast indexing
 
