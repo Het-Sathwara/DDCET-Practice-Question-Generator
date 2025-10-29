@@ -1,0 +1,38 @@
+{
+  "name": "DDCET Question Generator",
+  "short_name": "DDCET",
+  "description": "Free DDCET question generator with 31,000+ practice questions for DDCET exam preparation. Complete DDCET Physics and Mathematics coverage.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4CAF50",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/static/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/static/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "keywords": [
+    "DDCET",
+    "DDCET questions",
+    "DDCET exam",
+    "DDCET preparation",
+    "diploma to degree",
+    "entrance exam",
+    "physics questions",
+    "mathematics questions",
+    "Gujarat DDCET",
+    "DDCET 2025"
+  ]
+}
+

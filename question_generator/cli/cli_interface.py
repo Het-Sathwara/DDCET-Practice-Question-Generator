@@ -17,6 +17,9 @@ from ..generators.physics_generators import (
     WorkEnergyGenerator, OhmsLawGenerator, CapacitanceGenerator,
     HeatTransferGenerator, WaveMotionGenerator
 )
+from ..generators.physics_generators_additional import (
+    UnitsAndMeasurementGenerator, ElectrostaticsGenerator, OpticsGenerator
+)
 # Math generators - Bank-based for better variety
 from ..generators.math_bank_generator import (
     MatricesBankGenerator, LogarithmBankGenerator
@@ -197,16 +200,19 @@ class QuestionGeneratorCLI:
         self.generation_cooldown = 2  # seconds
         self.max_questions_per_generation = 100
         
-        # Physics generators mapping
+        # Physics generators mapping - Complete DDCET Coverage
         self.physics_generators = {
+            "Units & Measurement": UnitsAndMeasurementGenerator,  # NEW
             "Kinematics (Linear Motion)": KinematicsGenerator,
             "Newton's Laws of Motion": NewtonLawsGenerator,
             "Circular Motion": CircularMotionGenerator,
             "Work, Energy & Power": WorkEnergyGenerator,
             "Ohm's Law & Electric Current": OhmsLawGenerator,
+            "Electrostatics (Coulomb's Law)": ElectrostaticsGenerator,  # NEW
             "Capacitance": CapacitanceGenerator,
             "Heat & Thermometry": HeatTransferGenerator,
-            "Wave Motion": WaveMotionGenerator
+            "Wave Motion": WaveMotionGenerator,
+            "Optics (Refraction & TIR)": OpticsGenerator  # NEW
         }
         
         # Mathematics generators mapping (using NEW comprehensive generators)

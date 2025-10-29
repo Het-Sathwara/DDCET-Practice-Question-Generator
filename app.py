@@ -21,36 +21,85 @@ from question_generator.generators.physics_generators import (
     HeatTransferGenerator,
     WaveMotionGenerator
 )
+from question_generator.generators.physics_generators_additional import (
+    UnitsAndMeasurementGenerator,
+    ElectrostaticsGenerator,
+    OpticsGenerator
+)
 
 app = Flask(__name__)
 app.secret_key = 'your-secret-key-here-change-in-production'
 CORS(app)
 
-# Physics Generator Mapping
+# SEO-Friendly HTTP Headers
+@app.after_request
+def add_security_headers(response):
+    """Add security and SEO-friendly headers"""
+    # Security headers
+    response.headers['X-Content-Type-Options'] = 'nosniff'
+    response.headers['X-Frame-Options'] = 'SAMEORIGIN'
+    response.headers['X-XSS-Protection'] = '1; mode=block'
+    
+    # Cache control for static resources
+    if request.path.startswith('/static/'):
+        response.headers['Cache-Control'] = 'public, max-age=31536000'
+    else:
+        response.headers['Cache-Control'] = 'no-cache, must-revalidate'
+    
+    return response
+
+# Physics Generator Mapping - Complete DDCET Syllabus Coverage
 PHYSICS_GENERATORS = {
+    'units_measurement': UnitsAndMeasurementGenerator,  # NEW: Topic 1
     'kinematics': KinematicsGenerator,
     'newton_laws': NewtonLawsGenerator,
     'circular_motion': CircularMotionGenerator,
     'work_energy': WorkEnergyGenerator,
     'ohms_law': OhmsLawGenerator,
+    'electrostatics': ElectrostaticsGenerator,  # NEW: Topic 3
     'capacitance': CapacitanceGenerator,
     'heat_transfer': HeatTransferGenerator,
-    'wave_motion': WaveMotionGenerator
+    'wave_motion': WaveMotionGenerator,
+    'optics': OpticsGenerator  # NEW: Topic 5
 }
 
 # SEO Routes
 @app.route('/robots.txt')
 def robots():
-    return send_from_directory('static', 'robots.txt')
+    """Serve robots.txt for search engine crawlers"""
+    return send_from_directory('static', 'robots.txt', mimetype='text/plain')
 
 @app.route('/sitemap.xml')
 def sitemap():
-    return send_from_directory('static', 'sitemap.xml')
+    """Serve sitemap.xml for search engines"""
+    return send_from_directory('static', 'sitemap.xml', mimetype='application/xml')
+
+@app.route('/manifest.json')
+def manifest():
+    """Serve PWA manifest"""
+    return send_from_directory('static', 'manifest.json', mimetype='application/json')
 
 # Google Search Console Verification
 @app.route('/googlef6777d96df3cbc34.html')
 def google_verification():
+    """Google Search Console verification file"""
     return send_from_directory('static', 'googlef6777d96df3cbc34.html')
+
+# Additional SEO-friendly routes
+@app.route('/about')
+def about():
+    """About DDCET Question Generator"""
+    return render_template('index.html')  # For now, redirect to home
+
+@app.route('/ddcet')
+def ddcet_info():
+    """DDCET Information Page - SEO optimized"""
+    return render_template('index.html')  # For now, redirect to home
+
+@app.route('/ddcet-questions')
+def ddcet_questions():
+    """DDCET Questions Page - SEO optimized"""
+    return render_template('index.html')  # For now, redirect to home
 
 # Path to question banks
 QUESTION_BANKS_DIR = 'question_generator/data/question_banks'
@@ -71,14 +120,17 @@ TOPICS = {
         'statistics': 'Statistics'
     },
     'physics': {
+        'units_measurement': 'Units & Measurement',  # NEW
         'kinematics': 'Kinematics',
         'newton_laws': "Newton's Laws",
         'circular_motion': 'Circular Motion',
         'work_energy': 'Work & Energy',
         'ohms_law': "Ohm's Law",
+        'electrostatics': 'Electrostatics',  # NEW
         'capacitance': 'Capacitance',
         'heat_transfer': 'Heat Transfer',
-        'wave_motion': 'Wave Motion'
+        'wave_motion': 'Wave Motion',
+        'optics': 'Optics'  # NEW
     }
 }
 
