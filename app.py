@@ -8,6 +8,7 @@ from flask_cors import CORS
 import json
 import os
 import random
+import time
 from datetime import datetime
 
 # Import Physics Generators
@@ -228,9 +229,12 @@ def generate_questions():
         if not all_questions:
             return jsonify({'error': 'No questions available for this topic'}), 404
         
-        # Randomly select questions
+        # Better random selection to avoid repetition
+        random.seed(time.time())  # Use current time as seed for true randomness
+        random.shuffle(all_questions)  # Shuffle the entire list first
+        
         if len(all_questions) >= count:
-            selected = random.sample(all_questions, count)
+            selected = all_questions[:count]  # Take first N after shuffle
         else:
             selected = all_questions
         
