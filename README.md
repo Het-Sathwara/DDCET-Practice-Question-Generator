@@ -38,7 +38,7 @@ A comprehensive, intelligent **DDCET question generation system** for **DDCET Ph
 ### DDCET Physics Coverage (11 Complete Generators - COMPLETE SYLLABUS ✓)
 Complete **DDCET Physics syllabus** coverage with unlimited question generation - ALL 5 DDCET Topics Covered:
 
-**Topic 1: Physical Quantities & Units** (NEW ✨)
+**Topic 1: Physical Quantities & Units** 
 - **Units & Measurement** - MKS/CGS conversion, errors, vernier caliper, micrometer
 
 **Topic 2: Classical Mechanics**
@@ -49,7 +49,7 @@ Complete **DDCET Physics syllabus** coverage with unlimited question generation 
 
 **Topic 3: Electric Current**
 - **Ohm's Law & Electric Current** - Key DDCET Physics chapter
-- **Electrostatics** (Coulomb's Law) - Electric field, potential, flux (NEW ✨)
+- **Electrostatics** (Coulomb's Law) - Electric field, potential, flux 
 - **Capacitance** - DDCET Physics fundamentals
 
 **Topic 4: Heat and Thermometry**
@@ -57,7 +57,7 @@ Complete **DDCET Physics syllabus** coverage with unlimited question generation 
 
 **Topic 5: Wave Motion, Optics and Acoustics**
 - **Wave Motion** - Frequency, wavelength, Doppler effect
-- **Optics** - Refraction, Snell's law, TIR, optical fiber (NEW ✨)
+- **Optics** - Refraction, Snell's law, TIR, optical fiber 
 
 ### DDCET Mathematics Coverage
 
